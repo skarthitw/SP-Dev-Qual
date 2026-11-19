@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="dashboard">
+  <meta name="design-style" content="kiln">
+  <title>74 Exemplary Devotional Qualities of Śrīla Prabhupāda — Study Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* Page and surfaces: unbleached linen and river clay */
+      --background: #f4f1ea;
+      --surface-container-low: #ebe6db;
+      --surface-container: #e3ddd0;
+      --surface-container-high: #d9d1c2;
+
+      /* Ink */
+      --on-surface: #1c1b18;
+      --on-surface-variant: #5e5a51;
+
+      /* Rules */
+      --outline: #1c1b18;
+      --outline-variant: #d2cbbd;
+
+      /* Accents */
+      --primary: #1c1b18;
+      --on-primary: #f4f1ea;
+      --primary-container: #ebe6db;
+      --on-primary-container: #1c1b18;
+      --secondary: #4a5d46;
+      --tertiary: #9e3b2b;
+      --error: #9e2a22;
+      --on-error: #f4f1ea;
+
+      /* Data series */
+      --data-1: #4a5d46;
+      --data-2: #9e3b2b;
+      --data-3: #1c1b18;
+      --data-4: #8a6f48;
+      --data-context: #c7bfb0;
+
+      /* Fonts */
+      --font-headline: 'Shippori Mincho', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-label: 'Geist Mono', monospace;
+
+      /* Shape */
+      --rounded: 0.125rem;
+      --rounded-lg: 0.125rem;
+      --rounded-full: 0.125rem;
+
+      /* Style effects */
+      --rule-sumi-left: 2px solid var(--outline);
+      --rule-sumi: 1px solid var(--outline);
+      --rule-linen: 1px solid var(--outline-variant);
+      --rule-moss-left: 3px solid var(--secondary);
+      --rule-cinnabar-left: 3px solid var(--tertiary);
+      --label-tracking: 0.14em;
+      --backdrop-scrim: rgba(28, 27, 24, 0.58);
+
+      /* Semantic */
+      --positive: #4a5d46;
+      --warning: #8a6f48;
+      --focus: #1c1b18;
+
+      /* Type scale (Dashboard / Explorer) */
+      --display-size: clamp(1.85rem, 1.35rem + 1.8vw, 2.75rem);
+      --headline-size: clamp(1.25rem, 1.08rem + 0.6vw, 1.625rem);
+      --subhead-size: clamp(1.0625rem, 1rem + 0.25vw, 1.2rem);
+      --body-size: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+      --label-size: 0.75rem;
+
+      /* Spacing scale */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 120ms;
+      --dur-short: 220ms;
+      --dur-long: 420ms;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      overflow-x: clip;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    header { position: static !important; }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .page-grid {
+      display: grid;
+      gap: var(--space-xl);
+      padding: var(--space-lg);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .page-grid * { min-width: 0; }
+
+    /* Typography */
+    .kicker {
+      font-family: var(--font-label);
+      font-weight: 500;
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: var(--label-tracking);
+      color: var(--secondary);
+      margin: 0 0 var(--space-xs) 0;
+    }
+
+    .display-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--display-size);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      color: var(--on-surface);
+      margin: 0;
+    }
+
+    .subhead-moss {
+      font-family: var(--font-headline);
+      font-weight: 500;
+      font-size: var(--subhead-size);
+      line-height: 1.4;
+      color: var(--secondary);
+      margin: var(--space-sm) 0 0 0;
+      max-width: 68ch;
+    }
+
+    .section-heading {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--headline-size);
+      line-height: 1.2;
+      margin: 0 0 var(--space-xs) 0;
+      color: var(--on-surface);
+    }
+
+    .mono-label {
+      font-family: var(--font-label);
+      font-weight: 500;
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: var(--label-tracking);
+      color: var(--on-surface-variant);
+    }
+
+    .section-divider {
+      border: 0;
+      border-top: var(--rule-linen);
+      margin: 0;
+    }
+
+    /* Header */
+    .masthead {
+      padding-bottom: var(--space-lg);
+      border-bottom: var(--rule-sumi);
+    }
+
+    .masthead-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm) var(--space-lg);
+      margin-top: var(--space-md);
+      padding-top: var(--space-sm);
+      border-top: var(--rule-linen);
+    }
+
+    /* Quick Nav Links */
+    .section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+
+    .nav-jump {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: var(--label-tracking);
+      text-decoration: none;
+      color: var(--on-surface);
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .nav-jump:hover {
+      background: var(--surface-container);
+      border-color: var(--outline);
+    }
+
+    /* KPI / Washi Cards */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .washi-card {
+      background: var(--surface-container-low);
+      border-left: var(--rule-sumi-left);
+      border-radius: var(--rounded);
+      padding: var(--space-md) var(--space-lg);
+    }
+
+    .washi-card .value {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: var(--headline-size);
+      font-variant-numeric: lining-nums tabular-nums;
+      color: var(--on-surface);
+      margin: var(--space-xs) 0;
+    }
+
+    .washi-card .note {
+      color: var(--secondary);
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      border-radius: var(--rounded);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      border: 1px solid var(--outline);
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+    .btn-primary:hover {
+      background: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    .btn-secondary {
+      background: var(--surface-container-low);
+      color: var(--on-surface);
+      border-color: var(--outline-variant);
+    }
+    .btn-secondary:hover {
+      background: var(--surface-container-high);
+      border-color: var(--outline);
+    }
+
+    .btn-accent {
+      background: var(--tertiary);
+      color: var(--on-error);
+      border-color: var(--tertiary);
+    }
+    .btn-accent:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-active {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    /* Study Tracks */
+    .tracks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .track-card {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-left: var(--rule-moss-left);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+    .track-card:hover {
+      background: var(--surface-container);
+      border-color: var(--outline);
+    }
+    .track-card.is-selected {
+      background: var(--surface-container-high);
+      border-color: var(--outline);
+      border-left: 4px solid var(--tertiary);
+    }
+
+    .track-title {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--on-surface);
+      margin: 0;
+    }
+
+    .track-desc {
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      margin: 0;
+    }
+
+    /* Search & Filter Console */
+    .filter-console {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-left: var(--rule-sumi-left);
+      border-radius: var(--rounded);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-md);
+    }
+
+    .controls-row {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+      gap: var(--space-md);
+      align-items: end;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .field-label {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: var(--label-tracking);
+      color: var(--on-surface);
+      font-weight: 500;
+    }
+
+    .text-input, .select-input, .textarea-input {
+      width: 100%;
+      min-height: 44px;
+      padding: var(--space-sm) var(--space-md);
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      color: var(--on-surface);
+      transition: border-color var(--dur-micro) var(--ease-out);
+    }
+    .select-input {
+      padding-right: var(--space-xl);
+    }
+    .text-input:focus, .select-input:focus, .textarea-input:focus {
+      border-color: var(--outline);
+      outline: none;
+    }
+
+    .pillar-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+
+    .pillar-btn {
+      min-height: 44px;
+      padding: var(--space-xs) var(--space-md);
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      color: var(--on-surface);
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out);
+    }
+    .pillar-btn:hover {
+      background: var(--surface-container-high);
+    }
+    .pillar-btn.is-active {
+      background: var(--primary);
+      color: var(--on-primary);
+      border-color: var(--primary);
+    }
+
+    /* A-Z Index Bar */
+    .az-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-xs);
+      align-items: center;
+      padding-top: var(--space-sm);
+      border-top: var(--rule-linen);
+    }
+
+    .az-btn {
+      min-width: 36px;
+      min-height: 36px;
+      padding: 2px 6px;
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      cursor: pointer;
+      color: var(--on-surface);
+    }
+    .az-btn:hover:not(:disabled) {
+      background: var(--surface-container-high);
+      border-color: var(--outline);
+    }
+    .az-btn.is-active {
+      background: var(--tertiary);
+      color: var(--on-error);
+      border-color: var(--tertiary);
+    }
+    .az-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    /* Quality Cards Grid */
+    .qualities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .quality-card {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-left: var(--rule-sumi-left);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      cursor: pointer;
+      text-align: left;
+      transition: background-color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+    }
+    .quality-card:hover {
+      background: var(--surface-container);
+      transform: translateY(-1px);
+    }
+    .quality-card.is-studied {
+      border-left-color: var(--secondary);
+    }
+
+    .quality-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .quality-num {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--tertiary);
+      font-weight: 500;
+      letter-spacing: var(--label-tracking);
+    }
+
+    .quality-pillar-tag {
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      border: 1px solid var(--outline-variant);
+      padding: 2px 6px;
+      background: var(--background);
+    }
+
+    .quality-name {
+      font-family: var(--font-headline);
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      color: var(--on-surface);
+      margin: 0;
+    }
+
+    .quality-essence {
+      font-size: 0.875rem;
+      color: var(--on-surface-variant);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .quality-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--space-xs);
+      border-top: var(--rule-linen);
+      font-family: var(--font-label);
+      font-size: 0.72rem;
+      color: var(--on-surface-variant);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .studied-badge {
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    /* Modal — Smoothly scrollable on desktop and mobile */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: var(--backdrop-scrim);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-md);
+      overflow-y: auto;
+    }
+    .modal-backdrop.is-open {
+      display: flex;
+    }
+
+    .modal-dialog {
+      background: var(--background);
+      border: var(--rule-sumi);
+      border-left: 4px solid var(--primary);
+      border-radius: var(--rounded);
+      width: 100%;
+      max-width: 760px;
+      max-height: 90dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: var(--space-md) var(--space-lg);
+      background: var(--surface-container-low);
+      border-bottom: var(--rule-linen);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: var(--space-md);
+      flex-shrink: 0;
+    }
+
+    .modal-body {
+      padding: var(--space-lg);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      display: grid;
+      gap: var(--space-lg);
+      flex: 1 1 auto;
+    }
+
+    .modal-footer {
+      padding: var(--space-md) var(--space-lg);
+      background: var(--surface-container-low);
+      border-top: var(--rule-linen);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-shrink: 0;
+    }
+
+    .modal-nav-group {
+      display: flex;
+      gap: var(--space-sm);
+      align-items: center;
+    }
+
+    .modal-section-box {
+      background: var(--surface-container-low);
+      border-left: var(--rule-moss-left);
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+    }
+
+    .quote-box {
+      background: var(--surface-container);
+      border-left: var(--rule-cinnabar-left);
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+      display: grid;
+      gap: var(--space-sm);
+    }
+
+    .quote-text {
+      font-family: var(--font-headline);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      margin: 0;
+      color: var(--on-surface);
+    }
+
+    .quote-ref {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--secondary);
+      letter-spacing: 0.05em;
+    }
+
+    .challenge-box {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-left: var(--rule-sumi-left);
+      padding: var(--space-md);
+      border-radius: var(--rounded);
+    }
+
+    /* 7-Day Sankalpa Section */
+    .sankalpa-shell {
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+      border-left: var(--rule-sumi-left);
+      border-radius: var(--rounded);
+      padding: var(--space-lg);
+      display: grid;
+      gap: var(--space-lg);
+    }
+
+    .sankalpa-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: var(--space-lg);
+      align-items: start;
+    }
+
+    .day-list {
+      display: grid;
+      gap: var(--space-sm);
+    }
+
+    .day-row {
+      background: var(--background);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--rounded);
+      padding: var(--space-md);
+      display: grid;
+      gap: var(--space-sm);
+    }
+    .day-row.is-done {
+      border-left: var(--rule-moss-left);
+      background: var(--surface-container);
+    }
+
+    .day-row-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .check-label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      cursor: pointer;
+      min-height: 44px;
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .check-label input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--secondary);
+      cursor: pointer;
+    }
+
+    .card-preview {
+      background: var(--background);
+      border: var(--rule-sumi);
+      border-left: 4px solid var(--tertiary);
+      padding: var(--space-lg);
+      border-radius: var(--rounded);
+      display: grid;
+      gap: var(--space-md);
+    }
+
+    .preview-pre {
+      font-family: var(--font-label);
+      font-size: 0.8rem;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      margin: 0;
+      color: var(--on-surface);
+      background: var(--surface-container-low);
+      padding: var(--space-md);
+      border: 1px solid var(--outline-variant);
+    }
+
+    /* Walk in His Footsteps & Footnotes */
+    .footsteps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .footnote-list {
+      margin: 0;
+      padding-left: var(--space-lg);
+      display: grid;
+      gap: var(--space-sm);
+      color: var(--on-surface-variant);
+      font-size: 0.9rem;
+    }
+
+    .status-toast {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--secondary);
+      min-height: 1.25em;
+    }
+
+    .empty-state {
+      background: var(--surface-container-low);
+      border: 1px dashed var(--outline-variant);
+      padding: var(--space-xl);
+      text-align: center;
+      display: grid;
+      gap: var(--space-md);
+      justify-items: center;
+    }
+
+    .site-footer {
+      border-top: var(--rule-sumi);
+      padding: var(--space-xl) 0 var(--space-lg) 0;
+      display: grid;
+      gap: var(--space-sm);
+    }
+
+    .dedication-line {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--tertiary);
+      margin: 0;
+    }
+
+    @media (max-width: 820px) {
+      .controls-row {
+        grid-template-columns: 1fr;
+      }
+      .sankalpa-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-grid {
+        padding: var(--space-md);
+        gap: var(--space-lg);
+      }
+      .modal-backdrop {
+        padding: var(--space-xs);
+      }
+      .modal-dialog {
+        max-height: 94dvh;
+      }
+      .modal-header, .modal-body, .modal-footer {
+        padding: var(--space-md);
+      }
+      .modal-footer {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .modal-nav-group {
+        justify-content: space-between;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-grid">
+    <!-- Masthead -->
+    <header class="masthead">
+      <p class="kicker">Śrīla Prabhupāda-līlāmṛta • Interactive Devotional Study Guide</p>
+      <h1 class="display-title">74 Exemplary Devotional Qualities of Śrīla Prabhupāda</h1>
+      <p class="subhead-moss">
+        A structured study catalogue of His Divine Grace A. C. Bhaktivedanta Swami Prabhupāda’s saintly character across six thematic pillars, grounded in the six-volume <em>Śrīla Prabhupāda-līlāmṛta</em>.
+      </p>
+      <div class="masthead-meta">
+        <span class="mono-label">74 Qualities • 6 Pillars</span>
+        <span class="mono-label">4 Curated Study Tracks</span>
+        <span class="mono-label">Vedabase Chapter References</span>
+        <span class="mono-label">7-Day Saṅkalpa Planner</span>
+      </div>
+      <nav class="section-nav" aria-label="Page sections">
+        <a class="nav-jump" href="#tracks-section">Study Tracks</a>
+        <a class="nav-jump" href="#explorer-section">74 Qualities Explorer</a>
+        <a class="nav-jump" href="#sankalpa-section">7-Day Saṅkalpa</a>
+        <a class="nav-jump" href="#footsteps-section">Walk in His Footsteps</a>
+        <a class="nav-jump" href="#footnotes-section">Scholarly Footnotes</a>
+      </nav>
+    </header>
+
+    <!-- Summary KPI Strip -->
+    <section aria-label="Study overview metrics">
+      <div class="kpi-grid">
+        <div class="washi-card">
+          <div class="mono-label">Catalogue Scope</div>
+          <div class="value" id="kpi-total">74</div>
+          <p class="note">Qualities across 6 devotional pillars</p>
+        </div>
+        <div class="washi-card">
+          <div class="mono-label">Showing Now</div>
+          <div class="value" id="kpi-visible">74</div>
+          <p class="note" id="kpi-filter-note">All pillars &amp; A–Z active</p>
+        </div>
+        <div class="washi-card">
+          <div class="mono-label">Studied &amp; Reflected</div>
+          <div class="value" id="kpi-studied">0 / 74</div>
+          <p class="note">Saved automatically to your study log</p>
+        </div>
+        <div class="washi-card">
+          <div class="mono-label">7-Day Saṅkalpa</div>
+          <div class="value" id="kpi-sankalpa">0 / 7</div>
+          <p class="note">Daily vows fulfilled this week</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Curated Study Tracks -->
+    <section id="tracks-section" aria-labelledby="tracks-heading">
+      <p class="kicker">Guided Pathways</p>
+      <h2 class="section-heading" id="tracks-heading">Curated Study Tracks</h2>
+      <p style="margin-top: 0; color: var(--on-surface-variant); max-width: 68ch;">
+        Select a focused reading track to filter the catalogue into a thematic sequence, or view all 74 qualities below.
+      </p>
+      <div class="tracks-grid" id="tracks-grid"></div>
+    </section>
+
+    <!-- Search, Pillar Filter, A-Z Index & Quality Grid -->
+    <section id="explorer-section" aria-labelledby="explorer-heading">
+      <p class="kicker">Interactive Index</p>
+      <h2 class="section-heading" id="explorer-heading">Explore the 74 Qualities</h2>
+
+      <div class="filter-console">
+        <div class="controls-row">
+          <div class="field-group">
+            <label class="field-label" for="search-input">Search by quality, theme, Sanskrit term, or Līlāmṛta episode</label>
+            <input type="search" id="search-input" class="text-input" placeholder="e.g. Bhägavatam, Jagannätha, Bowery, fearlessness, japa…" oninput="handleSearchInput(this.value)">
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="sort-select">Sort order</label>
+            <select id="sort-select" class="select-input" onchange="handleSortChange(this.value)">
+              <option value="number">Catalogue Order (1–74)</option>
+              <option value="alpha">Alphabetical (A–Z)</option>
+              <option value="studied">Unstudied First</option>
+            </select>
+          </div>
+          <div>
+            <button type="button" class="btn btn-secondary" onclick="resetAllFilters()">Reset Filters</button>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">Filter by Thematic Pillar</span>
+          <div class="pillar-pills" id="pillar-pills"></div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">A–Z Quick Index</span>
+          <div class="az-bar" id="az-bar"></div>
+        </div>
+      </div>
+
+      <div style="margin-top: var(--space-lg);" id="qualities-container"></div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- 7-Day Sankalpa Interactive Planner -->
+    <section id="sankalpa-section" aria-labelledby="sankalpa-heading">
+      <p class="kicker">Personal Application</p>
+      <h2 class="section-heading" id="sankalpa-heading">7-Day Saṅkalpa (Resolution) Planner</h2>
+      <p style="margin-top: 0; color: var(--on-surface-variant); max-width: 68ch;">
+        Choose one quality for each day of the week to contemplate and practise, record your daily resolution, mark completion, and export a shareable contemplation card.
+      </p>
+
+      <div class="sankalpa-shell">
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: end; justify-content: space-between;">
+          <div class="field-group" style="min-width: min(280px, 100%); flex: 1;">
+            <label class="field-label" for="sankalpa-intention">Weekly Saṅkalpa Theme / Name</label>
+            <input type="text" id="sankalpa-intention" class="text-input" placeholder="e.g. Deepening morning japa and compassionate service" oninput="handleIntentionChange(this.value)">
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+            <button type="button" class="btn btn-secondary" onclick="loadRecommendedSankalpa()">Load Curated 7-Day Preset</button>
+            <button type="button" class="btn btn-secondary" onclick="resetSankalpa(this)">Clear Saṅkalpa</button>
+          </div>
+        </div>
+
+        <div class="sankalpa-layout">
+          <div class="day-list" id="sankalpa-days"></div>
+
+          <aside class="card-preview" aria-label="Shareable contemplation card">
+            <div>
+              <p class="kicker">Shareable Summary</p>
+              <h3 class="section-heading" style="font-size: 1.2rem;">Contemplation Card</h3>
+              <p style="margin: 0; font-size: 0.875rem; color: var(--on-surface-variant);">
+                Copy this formatted card to share with your study circle or download it as a text record.
+              </p>
+            </div>
+            <pre class="preview-pre" id="sankalpa-preview"></pre>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm);">
+              <button type="button" class="btn btn-primary" id="copy-sankalpa-btn" onclick="copySankalpaCard()">Copy Card Text</button>
+              <button type="button" class="btn btn-secondary" onclick="downloadSankalpaCard()">Download .txt</button>
+            </div>
+            <div class="status-toast" id="sankalpa-status" aria-live="polite"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Walk in His Footsteps Practical Guide -->
+    <section id="footsteps-section" aria-labelledby="footsteps-heading">
+      <p class="kicker">Applied Bhakti-Yoga</p>
+      <h2 class="section-heading" id="footsteps-heading">Walk in His Footsteps: Practical Devotional Action Guide</h2>
+      <p style="margin-top: 0; color: var(--on-surface-variant); max-width: 68ch;">
+        Śrīla Prabhupāda emphasised that Kṛṣṇa consciousness is practical action dovetailed with the Supreme Lord. These four daily disciplines translate his example in the <em>Līlāmṛta</em> into steady practice.
+      </p>
+      <div class="footsteps-grid">
+        <article class="washi-card">
+          <p class="kicker">01 • Sādhana Foundation</p>
+          <h3 class="quality-name">Guard the Morning Hours</h3>
+          <p class="quality-essence">
+            Even aboard the <em>Jaladuta</em> and in Bowery lofts, Śrīla Prabhupāda rose in the early hours to translate and chant. Anchor your day with attentive <em>japa</em> (sixteen rounds for initiated devotees, or a fixed daily vow) and <em>maṅgala-ārati</em> before worldly correspondence begins.
+          </p>
+        </article>
+        <article class="washi-card">
+          <p class="kicker">02 • Śravaṇaṁ Kīrtanam</p>
+          <h3 class="quality-name">Read &amp; Repeat Faithfully</h3>
+          <p class="quality-essence">
+            To his San Francisco students asking how to speak without full realisation, Prabhupāda taught <em>śrotavyaḥ kīrtitavyaś ca</em>: hear attentively from <em>Bhagavad-gītā</em> and <em>Śrīmad-Bhāgavatam</em>, reflect thoughtfully, and repeat those exact two lines to others without speculation.
+          </p>
+        </article>
+        <article class="washi-card">
+          <p class="kicker">03 • Yukta-Vairāgya</p>
+          <h3 class="quality-name">Dovetail Every Resource</h3>
+          <p class="quality-essence">
+            Following Rūpa Gosvāmī, Prabhupāda used dictaphones, printing presses, and modern travel solely in Kṛṣṇa’s service. Audit one skill, profession, or household resource this week and consciously engage it in Vaiṣṇava service.
+          </p>
+        </article>
+        <article class="washi-card">
+          <p class="kicker">04 • Vaiṣṇava Care</p>
+          <h3 class="quality-name">Be the Honeybee, Not the Fly</h3>
+          <p class="quality-essence">
+            In Calcutta (1971), when disciples complained about hypocrites, Prabhupāda reminded them that the honeybee seeks nectar while the fly seeks sores. Cultivate warmth, hospitality with <em>prasādam</em>, and appreciation for every sincere effort in devotees.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Scholarly Footnotes -->
+    <section id="footnotes-section" aria-labelledby="footnotes-heading">
+      <p class="kicker">Sources &amp; Methodology</p>
+      <h2 class="section-heading" id="footnotes-heading">Scholarly Footnotes &amp; Source Attribution</h2>
+      <ol class="footnote-list">
+        <li>
+          <strong>Primary Biographical Source:</strong> All 74 qualities, biographical episodes, and direct quotations are derived from Satsvarūpa dāsa Goswami’s six-volume authorised biography, <em>Śrīla Prabhupāda-līlāmṛta</em> (Bhaktivedanta Book Trust).
+        </li>
+        <li>
+          <strong>Chapter-Level Vedabase References:</strong> Each quality card lists its corresponding volume and chapter location in the Vedabase edition (e.g., <em>Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 3</em>) so students can locate and read the complete narrative context.
+        </li>
+        <li>
+          <strong>Diacritic &amp; Textual Convention:</strong> Sanskrit and Bengali terms follow standard International Alphabet of Sanskrit Transliteration (IAST) conventions (such as <em>kīrtana</em>, <em>prasādam</em>, <em>sādhana</em>, <em>bhakti-yoga</em>, and <em>saṅkīrtana</em>), while English prose follows Indian English spelling.
+        </li>
+        <li>
+          <strong>Thematic Taxonomy:</strong> The six pillars and four study tracks represent an editorial study framework designed to help devotees systematically contemplate Śrīla Prabhupāda’s internal devotion (<em>bhāva</em>), personal discipline (<em>ācāra</em>), and missionary leadership (<em>pracāra</em>).
+        </li>
+      </ol>
+    </section>
+
+    <!-- Footer Dedication -->
+    <footer class="site-footer">
+      <p class="dedication-line">
+        Celebrating ISKCON 60 years • Prabhupada 50 years • Karunapati Kesava das • IBC Kaggadasapura • ISKCON Whitefield
+      </p>
+      <p style="margin: 0; font-size: 0.875rem; color: var(--on-surface-variant);">
+        In humble gratitude to His Divine Grace A. C. Bhaktivedanta Swami Prabhupāda, Founder-Ācārya of the International Society for Krishna Consciousness (ISKCON), and with acknowledgement to the Bhaktivedanta Book Trust (BBT) for preserving and publishing the <em>Śrīla Prabhupāda-līlāmṛta</em>.
+      </p>
+    </footer>
+  </div>
+
+  <!-- Quality Detail Modal -->
+  <div class="modal-backdrop" id="quality-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" onclick="handleBackdropClick(event)">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <p class="kicker" id="modal-kicker">Quality 01 • Pillar</p>
+          <h2 class="section-heading" id="modal-title">Quality Title</h2>
+        </div>
+        <button type="button" class="btn btn-secondary" onclick="closeQualityModal()" aria-label="Close modal">Close ✕</button>
+      </div>
+
+      <div class="modal-body" id="modal-body">
+        <div>
+          <span class="mono-label">Spiritual Essence</span>
+          <p id="modal-essence" style="margin: var(--space-xs) 0 0 0; font-weight: 500;"></p>
+        </div>
+
+        <div class="modal-section-box">
+          <span class="mono-label" style="color: var(--secondary);">Biographical Episode (Līlāmṛta)</span>
+          <p id="modal-story" style="margin: var(--space-xs) 0 0 0;"></p>
+        </div>
+
+        <div class="quote-box">
+          <span class="mono-label" style="color: var(--tertiary);">Illuminating Quote</span>
+          <blockquote class="quote-text" id="modal-quote"></blockquote>
+          <div class="quote-ref" id="modal-ref"></div>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center;">
+            <button type="button" class="btn btn-primary" id="copy-quote-btn" onclick="copyCurrentQuote()">Copy Quote</button>
+            <span class="status-toast" id="quote-copy-status" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div>
+          <span class="mono-label">Reflection Questions</span>
+          <ul id="modal-questions" style="margin: var(--space-xs) 0 0 0; padding-left: var(--space-lg); display: grid; gap: var(--space-xs);"></ul>
+        </div>
+
+        <div class="challenge-box">
+          <span class="mono-label" style="color: var(--on-surface);">24-Hour Practical Challenge</span>
+          <p id="modal-challenge" style="margin: var(--space-xs) 0 0 0;"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-nav-group">
+          <button type="button" class="btn btn-secondary" id="modal-prev-btn" onclick="navigateModal(-1)">← Previous</button>
+          <span class="mono-label" id="modal-pos-label">1 of 74</span>
+          <button type="button" class="btn btn-secondary" id="modal-next-btn" onclick="navigateModal(1)">Next →</button>
+        </div>
+        <button type="button" class="btn btn-accent" id="modal-studied-btn" onclick="toggleCurrentStudied()">Mark as Studied</button>
+      </div>
+    </div>
+  </div>
+
+  <api-shim></api-shim>
+  <script>
+    const PILLARS = [
+      { id: 'all', name: 'All Pillars (74)', short: 'All' },
+      { id: 'p1', name: '1. Unflinching Surrender & Mission', short: 'Surrender & Mission' },
+      { id: 'p2', name: '2. Universal Compassion & Devotee Care', short: 'Compassion & Care' },
+      { id: 'p3', name: '3. Core Sādhana & Spiritual Practices', short: 'Core Sādhana' },
+      { id: 'p4', name: '4. Mastery of Mind, Senses & Speech', short: 'Mind & Speech' },
+      { id: 'p5', name: '5. Inner Character, Humility & Purity', short: 'Character & Purity' },
+      { id: 'p6', name: '6. Dynamic Action, Renunciation & Time Utilisation', short: 'Dynamic Action' }
+    ];
+
+    const TRACKS = [
+      {
+        id: 'pioneer',
+        name: `Pioneer's Journey`,
+        desc: `Follow Abhay's passage from Harrison Road and the Jaladuta to New York's Bowery—courage, faith, and mission under fire.`,
+        ids: [1, 2, 4, 7, 10, 12, 13, 63, 66, 70]
+      },
+      {
+        id: 'sadhana',
+        name: `Sādhana Masterclass`,
+        desc: `Deepen daily japa, Deity worship, early-morning Bhagavatam study, and kīrtana discipline after Prabhupāda's personal example.`,
+        ids: [27, 28, 29, 30, 31, 32, 34, 36, 37, 38]
+      },
+      {
+        id: 'shepherd',
+        name: `Caring Shepherd`,
+        desc: `Explore his fatherly warmth, prasādam hospitality, patience with young seekers, and honeybee vision of Vaiṣṇavas.`,
+        ids: [14, 15, 16, 18, 20, 22, 23, 25, 26, 55]
+      },
+      {
+        id: 'mrdanga',
+        name: `Bṛhat-Mṛdaṅga Mission`,
+        desc: `Focus on writing, Back to Godhead, book distribution, fearless philosophical defence, and global temple building.`,
+        ids: [3, 5, 8, 9, 11, 33, 45, 64, 68, 74]
+      }
+    ];
+
+    // All 74 exemplary devotional qualities grounded in the Śrīla Prabhupāda-līlāmṛta
+    const QUALITIES = [
+      // PILLAR 1: Unflinching Surrender & Mission (1-13)
+      {
+        id: 1, pillar: 'p1', name: `Absolute Dependence on Kṛṣṇa`,
+        essence: `Placing complete trust in Lord Kṛṣṇa's protection and arrangement through every hardship.`,
+        story: `Aboard the cargo ship Jaladuta in 1965, after enduring seasickness and two heart attacks, Śrīla Prabhupāda wrote a poignant poem praying directly to Kṛṣṇa as his only companion and means of success in the West.`,
+        quote: `O Lord Kṛṣṇa, except for You there is no means of success.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 12: "The Journey to America"`,
+        q: [`Where do I still rely solely on personal calculation rather than Kṛṣṇa's shelter?`, `How can I invoke Kṛṣṇa's companionship during an unsettling transition?`],
+        challenge: `Begin your hardest task today with a sincere spoken prayer acknowledging Kṛṣṇa as the ultimate doer.`
+      },
+      {
+        id: 2, pillar: 'p1', name: `Unwavering Obedience to Guru`,
+        essence: `Treating the spiritual master's single instruction as one's very life and soul.`,
+        story: `At their very first meeting on the Ultadanga rooftop in 1922, Śrīla Bhaktisiddhānta Sarasvatī asked Abhay to preach Lord Caitanya's message in English; Abhay accepted him in his heart immediately and dedicated decades to fulfilling that order.`,
+        quote: `You are educated young men. Why don't you preach Lord Caitanya Mahāprabhu's message throughout the whole world?`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 3: "A Very Nice Saintly Person"`,
+        q: [`Which instruction from my spiritual guides have I delayed implementing?`, `How do I keep my guru's desire central amid daily duties?`],
+        challenge: `Identify one concrete instruction from Śrīla Prabhupāda's books and execute it faithfully today.`
+      },
+      {
+        id: 3, pillar: 'p1', name: `Fearless Preaching Conviction`,
+        essence: `Speaking the absolute truth of Bhagavad-gītā boldly without compromising for popularity.`,
+        story: `At 26 Second Avenue and in television studios, challengers tested Prabhupāda with impersonalist doctrines and modern philosophies; he answered directly, insisting that surrender to Kṛṣṇa is the clear verdict of scripture.`,
+        quote: `When you sell diamonds, you cannot expect that everyone will purchase.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 33: "A Lot of Ground to be Covered"`,
+        q: [`When do I soften spiritual truth out of fear of social awkwardness?`, `How can clarity and kindness coexist when I share Kṛṣṇa consciousness?`],
+        challenge: `Share one unambiguous principle of Bhagavad-gītā respectfully with a friend or colleague today.`
+      },
+      {
+        id: 4, pillar: 'p1', name: `Abhay — Fearless Shelter at Lotus Feet`,
+        essence: `Living up to his birth name by remaining unshaken in danger and responsibility.`,
+        story: `Born Abhay Charan—"one who is fearless, having taken shelter at Lord Kṛṣṇa's lotus feet"—he carried that fearlessness from surviving childhood plague and riots in Calcutta to pioneering alone in New York at age seventy.`,
+        quote: `If Kṛṣṇa wants to kill you, no one can save you; and if Kṛṣṇa wants to save you, no one can kill you.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1: "Childhood" & Vol. 4, Ch. 29`,
+        q: [`What fear currently holds me back from deeper spiritual commitment?`, `How does remembering Kṛṣṇa's supreme control steady my nerves?`],
+        challenge: `Step past one hesitation in devotional service today without waiting for ideal conditions.`
+      },
+      {
+        id: 5, pillar: 'p1', name: `Paramparā Fidelity`,
+        essence: `Presenting Vedic wisdom strictly as received in disciplic succession without invention.`,
+        story: `Whether lecturing in Haight-Ashbury or debating scholars, Śrīla Prabhupāda refused personal speculation, declaring himself simply a postman delivering the intact message of Kṛṣṇa, Lord Caitanya, and Śrīla Bhaktisiddhānta.`,
+        quote: `Here in this material world we are all conditioned souls. Your knowledge is imperfect. We have to hear from the perfect authority, Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 19: "Planting the Seed"`,
+        q: [`Am I tempted to mix personal opinions into Kṛṣṇa's teachings?`, `How well can I cite verse and authority when explaining bhakti?`],
+        challenge: `Memorise one verse from Bhagavad-gītā As It Is and reflect on its exact purport.`
+      },
+      {
+        id: 6, pillar: 'p1', name: `Transcendental Vision Beyond Politics`,
+        essence: `Seeing spiritual awakening as the eternal cure superior to temporary national or social remedies.`,
+        story: `When Abhay challenged Bhaktisiddhānta Sarasvatī that India needed independence before preaching, he accepted defeat with joy upon hearing that Kṛṣṇa consciousness cannot wait for changing political regimes.`,
+        quote: `Kṛṣṇa consciousness didn't have to wait for a change in Indian politics, nor was it dependent on who ruled. It could not wait.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 3: "A Very Nice Saintly Person"`,
+        q: [`Do I treat spiritual life as secondary until worldly affairs settle?`, `How can I see current events through the lens of the eternal soul?`],
+        challenge: `Devote time you would spend debating news or politics to chanting or reading Śrīmad-Bhāgavatam.`
+      },
+      {
+        id: 7, pillar: 'p1', name: `Visionary Institutional Stewardship`,
+        essence: `Conceiving a global society from a tiny storefront and structuring it to endure.`,
+        story: `While living in a modest Lower East Side storefront in 1966, Prabhupāda drafted the Seven Purposes of ISKCON, and by 1970 established the Governing Body Commission (G.B.C.) to protect standards across thirty-four centres.`,
+        quote: `Plain, small, and impoverished as it was, Prabhupāda regarded the storefront as a holy place of transcendental pastimes.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 19 & Vol. 4, Ch. 31`,
+        q: [`How faithfully do I care for the small responsibilities currently in my hands?`, `Do I support collective ISKCON cooperation above personal preference?`],
+        challenge: `Improve the cleanliness, order, or reliability of one service you perform for your temple or sangha.`
+      },
+      {
+        id: 8, pillar: 'p1', name: `Urgency in Lord Caitanya's Mission`,
+        essence: `Working relentlessly under a sacred awareness of limited time and humanity's urgent need.`,
+        story: `Even when newly arrived seekers in New York were beginners, Prabhupāda urged them immediately to become preachers of Bhagavad-gītā, feeling the urgency of suffering souls in Kali-yuga.`,
+        quote: `Prabhupāda can't wait to tell them—even if they aren't ready. It's too urgent. The world needs Kṛṣṇa conscious preachers.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 18: "Breaking Ground"`,
+        q: [`Do I postpone sharing Kṛṣṇa consciousness waiting to feel "fully qualified"?`, `What does spiritual urgency look like in my weekly routine?`],
+        challenge: `Invite one newcomer, neighbour, or relative to a temple programme or prasādam meal this week.`
+      },
+      {
+        id: 9, pillar: 'p1', name: `Publishing Priority (Bṛhat-Mṛdaṅga)`,
+        essence: `Treating transcendental books as the lifelong heart of global preaching.`,
+        story: `Remembering his spiritual master's 1932 instruction at Rādhā-kuṇḍa—"If you ever get any money, publish books"—Prabhupāda started Back to Godhead single-handedly in 1944 and dictated volumes of Bhāgavatam through the night.`,
+        quote: `If it is possible for ordinary, mundane literature, why shouldn't transcendental literature create devotees all over the world?`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 6 & Vol. 2, Ch. 19`,
+        q: [`How seriously do I read and distribute Śrīla Prabhupāda's books?`, `What keeps me from carrying a small book to share daily?`],
+        challenge: `Place at least one copy of Bhagavad-gītā or a small Prabhupāda book into someone's hands.`
+      },
+      {
+        id: 10, pillar: 'p1', name: `Dṛḍha-Vrata — Iron-Willed Determination`,
+        essence: `Maintaining unbreakable resolve even when friends, family, or circumstances oppose the mission.`,
+        story: `In Jhansi and Delhi during the 1950s, while peers abandoned spiritual outreach or urged him to settle quietly, Dr. Sastri observed Prabhupāda preaching through the night with iron-willed self-confidence.`,
+        quote: `He was having iron-will determination and self-confidence about his mission. He was not doubtful at all. He was dṛḍha-vrata.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 7–8`,
+        q: [`What setback has recently weakened my spiritual resolve?`, `How can association with resolute devotees strengthen my vow?`],
+        challenge: `Reaffirm your daily chanting or reading vow in writing and keep it without exception today.`
+      },
+      {
+        id: 11, pillar: 'p1', name: `Empowering Every Town and Village`,
+        essence: `Believing wholeheartedly in Lord Caitanya's prophecy that the holy name will reach the whole earth.`,
+        story: `Travelling across continents from Los Angeles and London to Nairobi and Sydney, Śrīla Prabhupāda established centres wherever sincere hearts awaited, proving that bhakti transcends race and culture.`,
+        quote: `Lord Caitanya said that in every town and village on the surface of the world they will know the message of the saṅkīrtana movement.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 35–36`,
+        q: [`Do I ever view certain people or places as "unlikely" to accept bhakti?`, `How can I support outreach beyond my comfortable circle?`],
+        challenge: `Pray for the spread of the holy name in your neighbourhood and take one step to support local outreach.`
+      },
+      {
+        id: 12, pillar: 'p1', name: `Resilience Through Betrayal & Crisis`,
+        essence: `Refusing to let setbacks or financial losses derail Kṛṣṇa's service.`,
+        story: `When inexperienced disciples in New York lost six thousand dollars to the deceptive Mr. Price, Prabhupāda felt the sting deeply yet immediately transformed the crisis into a Bhagavatam lesson on detachment and responsibility.`,
+        quote: `We have recently lost $6,000… as soon as the check is out of hand, now it is gone. Therefore save twenty-five percent for emergencies.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 23: "The Price Affair"`,
+        q: [`How do I react when someone disappoints me or resources are lost?`, `Can I extract a lasting spiritual lesson from a recent frustration?`],
+        challenge: `Respond calmly to one practical mishap today without blaming or losing devotional focus.`
+      },
+      {
+        id: 13, pillar: 'p1', name: `Vaikuṇṭha Consciousness Anywhere`,
+        essence: `Transforming any humble room or city street into the spiritual world through absorption in Kṛṣṇa.`,
+        story: `Though New York's Bowery and 26 Second Avenue were gritty urban neighbourhoods, Prabhupāda saw them not as mundane New York but as a transcendental haven dedicated to Kṛṣṇa's pastimes.`,
+        quote: `His spiritual master had not really been living in any of those cities, but was always in Vaikuṇṭha because of his absorption in devotional service.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 19: "Planting the Seed"`,
+        q: [`Do I blame my external environment for my lack of spiritual absorption?`, `How can I sanctify my home or workspace for Kṛṣṇa today?`],
+        challenge: `Place a picture of Kṛṣṇa or Śrīla Prabhupāda cleanly in your workspace and offer a moment of remembrance.`
+      },
+
+      // PILLAR 2: Universal Compassion & Devotee Care (14-26)
+      {
+        id: 14, pillar: 'p2', name: `Prahlāda-Like Compassion for Suffering Souls`,
+        essence: `Refusing solitary peace in holy dhāmas in order to rescue bewildered people in material cities.`,
+        story: `After living peacefully in Vṛndāvana, Prabhupāda boarded a freighter for America and rode through industrial highways lined with sensual billboards, moved by Prahlāda Mahārāja's compassion for all suffering beings.`,
+        quote: `I do not wish to be liberated alone, leaving aside all these poor fools and rascals… I wish to bring them back to shelter at Your lotus feet.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 13: "Butler, Pennsylvania"`,
+        q: [`Do I look down on materialistic people or feel genuine compassion for their confusion?`, `What small act of kindness can open someone's heart to Kṛṣṇa?`],
+        challenge: `Pray sincerely for the spiritual welfare of someone whose lifestyle differs greatly from yours.`
+      },
+      {
+        id: 15, pillar: 'p2', name: `Fatherly Affection & Personal Presence`,
+        essence: `Making hundreds of distant disciples each feel personally known, loved, and guided.`,
+        story: `Whether returning to Detroit airport or counselling young hippies in Montreal, Prabhupāda related as a real spiritual father—accessible, warm, and deeply attentive to each disciple's inner growth.`,
+        quote: `Although most of his hundreds of disciples saw him only from afar, each of them was certain that Prabhupāda was his own.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 29 & Ch. 33`,
+        q: [`Who in my community feels unseen or peripheral right now?`, `How can I offer unhurried, genuine attention to a fellow devotee today?`],
+        challenge: `Call or message a devotee you have not checked on recently just to encourage them.`
+      },
+      {
+        id: 16, pillar: 'p2', name: `Nourishing Others with Prasādam & Love`,
+        essence: `Saving body and soul alike through lovingly cooked, offered Kṛṣṇa prasādam.`,
+        story: `In New York, Dr. Ramamurti Mishra recalled how Prabhupāda cooked like a chemist and insisted on feeding him bhagavat-prasādam on time, reviving his frail body and winning his heart with affection.`,
+        quote: `It was not bread he gave me—he gave me prasādam. This was life, and he saved my life.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 14: "Struggling Alone"`,
+        q: [`Do I cook and serve food as a hurried chore or as an act of loving devotion?`, `Who could benefit from a warm plate of prasādam this week?`],
+        challenge: `Prepare or offer a simple sweet or meal to Kṛṣṇa and share the prasādam joyfully with someone.`
+      },
+      {
+        id: 17, pillar: 'p2', name: `Nityānanda-Like Mercy Without Discrimination`,
+        essence: `Offering the holy name freely to the fallen without judging their background.`,
+        story: `Facing a world filled with modern "Jagāis and Mādhāis" struggling with intoxication and disillusionment, Prabhupāda took every risk to initiate sincere Western youths and elevate them to brāhminical life.`,
+        quote: `In Lord Nityānanda's time there were only one Jagāi and Mādhāi, but now the whole world is filled with Jagāis and Mādhāis.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 36: "In Every Town and Village"`,
+        q: [`What subtle prejudices make me withhold spiritual encouragement from someone?`, `How did Kṛṣṇa's mercy reach me despite my own disqualifications?`],
+        challenge: `Greet every visitor you meet at temple or online with equal warmth, regardless of dress or background.`
+      },
+      {
+        id: 18, pillar: 'p2', name: `The Honeybee Vision`,
+        essence: `Seeking out the nectar of others' good qualities instead of dwelling on faults like a fly.`,
+        story: `When Western disciples in Calcutta complained about local hypocrisy in 1971, Prabhupāda narrated the parable of the bee and the fly, training them to appreciate sincerity wherever it appears.`,
+        quote: `The devotee should be like the honeybee and see the good in others, not like the fly, looking for the faults.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`Which person's fault have I been replaying in my mind lately?`, `What genuine virtue or service can I sincerely appreciate in them?`],
+        challenge: `Speak one genuine compliment about a colleague or devotee today, and refrain from all fault-finding.`
+      },
+      {
+        id: 19, pillar: 'p2', name: `Meeting Seekers Where They Stand`,
+        essence: `Engaging people's existing intelligence, art, and music so they gradually dovetail with Kṛṣṇa.`,
+        story: `Rather than rejecting Linda's love of Greek philosophy in San Francisco, Prabhupāda connected Socrates and Homer to Śrīmad-Bhāgavatam and delighted her with stories of Kṛṣṇa the butter thief.`,
+        quote: `Here I could use my intelligence and ask the questions I had always wanted to ask in school.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 24: "New Jagannātha Purī"`,
+        q: [`Do I dismiss seekers' interests abruptly instead of bridging them to Kṛṣṇa?`, `How can I listen first before offering philosophy?`],
+        challenge: `Ask a friend about what inspires them and gently connect it to a universal principle from the Gītā.`
+      },
+      {
+        id: 20, pillar: 'p2', name: `Equal Spiritual Vision for All Souls`,
+        essence: `Seeing every practitioner—man or woman, East or West—as an eternal spirit soul capable of perfection.`,
+        story: `When Govinda dāsī felt discouraged hearing remarks about women's advancement on a California beach, Prabhupāda immediately corrected the bodily outlook and affirmed equal spiritual potential.`,
+        quote: `You must see yourself as spirit soul, eternal servant of Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 25: "Our Master Has Not Finished His Work"`,
+        q: [`Where do I still judge spiritual capacity by gender, age, nationality, or status?`, `How can I honour the spirit soul in every devotee I serve beside?`],
+        challenge: `Acknowledge and support the devotional contribution of someone often overlooked.`
+      },
+      {
+        id: 21, pillar: 'p2', name: `Generous Hospitality & Politeness`,
+        essence: `Honouring guests, neighbours, and even busy office clerks with courtesy and thoughtful gifts.`,
+        story: `In New York, whenever Prabhupāda visited Mrs. Ferber's office, his modesty and politeness moved her to fetch him water personally; learning she liked samosās, he returned next time carrying a fresh tray for her.`,
+        quote: `He was very polite always, very modest, and a great scholar.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 15: "It Will Not Be Possible to Assist You"`,
+        q: [`Am I as gracious with clerks, drivers, and neighbours as I am with senior devotees?`, `What small thoughtful gesture can brighten someone's day?`],
+        challenge: `Express sincere gratitude—and if possible offer a small prasādam treat—to someone who serves you daily.`
+      },
+      {
+        id: 22, pillar: 'p2', name: `Patience with Spiritual Infants`,
+        essence: `Nurturing newcomers step by step without harshness while holding high ideals before them.`,
+        story: `When early San Francisco disciples could not even spell "Sanātana" or pronounce Vaiṣṇava names, Prabhupāda patiently repeated stories three times, delighted whenever they showed sincere eagerness to serve.`,
+        quote: `Your philosophy is simply wonderful, your prasādam is simply wonderful, you are simply wonderful.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 24 & Vol. 4, Ch. 33`,
+        q: [`Do I grow impatient when newcomers ask basic questions or make etiquette mistakes?`, `How patient were senior devotees with me when I began?`],
+        challenge: `Answer a beginner's question today with full warmth and zero condescension.`
+      },
+      {
+        id: 23, pillar: 'p2', name: `Protecting Devotees' Practical Livelihoods`,
+        essence: `Giving balanced, practical guidance so householders and workers support Kṛṣṇa's mission responsibly.`,
+        story: `When Satsvarūpa impulsively quit his social work job in 1966, Prabhupāda instructed him not to resign, advising him instead to earn honestly and support the fledgling Society.`,
+        quote: `Swamiji told him that he could not quit but should go on earning money for Kṛṣṇa and donating it to the Society.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 20: "Stay High Forever"`,
+        q: [`Do I confuse irresponsible escapism with true renunciation?`, `How can I make my daily work an honest offering to Kṛṣṇa?`],
+        challenge: `Perform your professional or domestic duties with extra integrity today, dedicating the fruit to Kṛṣṇa.`
+      },
+      {
+        id: 24, pillar: 'p2', name: `Loving Competition in Service`,
+        essence: `Delighting in mutual service where guru and disciples vie to please one another for Kṛṣṇa.`,
+        story: `Prabhupāda compared the bond between spiritual master and disciple to Kṛṣṇa and the gopīs: as disciples accepted more service, Prabhupāda's joy multiplied, inspiring ever greater devotion in return.`,
+        quote: `Even in dealings between spiritual master and disciple a sense of loving competition prevailed, each wanting to serve the other.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 29: "Unlimited Opportunity, Limited Time"`,
+        q: [`Is my service motivated by seeking recognition or by wanting to please my mentors?`, `How can I celebrate another devotee's success in service?`],
+        challenge: `Quietly take up an unglamorous task today purely to relieve a fellow devotee's burden.`
+      },
+      {
+        id: 25, pillar: 'p2', name: `Joyful Encouragement ("We Are Happies")`,
+        essence: `Radiating transcendental cheerfulness that makes spiritual life more attractive than material pleasure.`,
+        story: `Asked by a reporter whether his young followers were hippies, Prabhupāda smiled and coined a memorable phrase—showing how chanting Hare Kṛṣṇa revived their faces like monsoon rain reviving Vṛndāvana.`,
+        quote: `No, we are not hippies. We are happies.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 29: "Unlimited Opportunity, Limited Time"`,
+        q: [`Does my practice of bhakti make me look joyful and welcoming or grim?`, `What spiritual memory brings instant cheer to my heart?`],
+        challenge: `Smile warmly and greet devotees with enthusiasm today, sharing one uplifting Kṛṣṇa pastime.`
+      },
+      {
+        id: 26, pillar: 'p2', name: `Healing Spiritual Loneliness & Illusion`,
+        essence: `Offering real divine shelter to those wounded by modern alienation and false remedies.`,
+        story: `At Sydney's Wayside Chapel and on New York's streets, Prabhupāda met youths trapped in drugs and despair, directly showing how Hare Kṛṣṇa saves one from repeated birth and death.`,
+        quote: `What good actually is this chanting of Hare Kṛṣṇa? "It saves you from death!" Prabhupāda answered forcibly.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`What "remedies worse than the disease" do people around me turn to for relief?`, `How can I offer the holy name gently to someone feeling hopeless?`],
+        challenge: `Share a short Hare Kṛṣṇa kīrtana recording or comforting Gītā verse with someone under stress.`
+      },
+
+      // PILLAR 3: Core Sādhana & Spiritual Practices (27-38)
+      {
+        id: 27, pillar: 'p3', name: `Continuous Japa Absorption`,
+        essence: `Keeping the holy names vibrating on one's tongue in every circumstance—walking, riding, or resting.`,
+        story: `In Surat (1971), Yamunā observed Prabhupāda's hand always inside his saffron bead bag—riding in cars, sitting between appointments, or walking—never wasting a moment without chanting japa.`,
+        quote: `During visiting hours, riding in the car, walking, standing, or sitting, Prabhupāda was chanting japa all the time.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`What happens to my mind during transit or waiting periods?`, `Am I chanting attentively to hear every syllable of the mahā-mantra?`],
+        challenge: `Replace scrolling during travel or waiting today with quiet japa or mental chanting.`
+      },
+      {
+        id: 28, pillar: 'p3', name: `Ecstatic Kīrtana Leadership`,
+        essence: `Leading congregational chanting with full heart, mṛdaṅga, and karatālas so listeners awaken.`,
+        story: `From leading childhood Ratha-yātrā kīrtanas on Harrison Road to playing mṛdaṅga at 4:30 a.m. in chilly Indian rooms and dancing at the Avalon Ballroom, Prabhupāda poured his entire soul into saṅkīrtana.`,
+        quote: `Let there be all glory to the congregational chanting of Hare Kṛṣṇa, which cleanses the dirt from the mirror of the mind.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1 & Vol. 3, Ch. 24`,
+        q: [`Do I participate wholeheartedly in kīrtana or hold back self-consciously?`, `How can I bring more attentiveness to singing with devotees?`],
+        challenge: `Sing along aloud during at least fifteen minutes of kīrtana today, focusing on the sound of the holy names.`
+      },
+      {
+        id: 29, pillar: 'p3', name: `Early-Morning Translation & Sādhana`,
+        essence: `Rising in the pre-dawn quiet to translate Śrīmad-Bhāgavatam and commune with paramparā.`,
+        story: `Whether in Los Angeles, London, or on tour with a dictaphone and Sanskrit commentaries in his briefcase, Prabhupāda rose in the middle of the night and worked steadily until dawn before meeting his temple family.`,
+        quote: `Putting aside all other considerations, disregarding present circumstances, he would merge into the timeless message of transcendental knowledge.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 22 & Vol. 4, Ch. 34`,
+        q: [`How protected are my early morning hours before phones and emails intrude?`, `What small adjustment tonight would help me rise earlier tomorrow?`],
+        challenge: `Go to sleep thirty minutes earlier tonight and wake up early for undisturbed japa and reading.`
+      },
+      {
+        id: 30, pillar: 'p3', name: `Loving Deity Worship from Childhood`,
+        essence: `Serving Kṛṣṇa's arcā-vigraha form with heartfelt personal intimacy and reverence.`,
+        story: `As a boy gazing for hours at the smiling Rādhā-Govinda Deities in Calcutta, he asked his father for his own small Rādhā-Kṛṣṇa Deities; later, when college studies made him box Them away, Kṛṣṇa appeared in a dream asking to be worshiped again.`,
+        quote: `I can remember standing at the doorway of Rādhā-Govinda temple saying prayers to Rādhā-Govinda mūrti. I would watch for hours together.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1 & Ch. 2`,
+        q: [`Do I treat Deity worship or home altar care as routine ritual or personal relationship?`, `What detail on my home altar needs fresh loving care?`],
+        challenge: `Clean your home altar or offer a fresh flower and incense with attentive prayer today.`
+      },
+      {
+        id: 31, pillar: 'p3', name: `Cleanliness as Heart Purification`,
+        essence: `Viewing spotless temple care and utensil polishing as direct cleansing of the heart.`,
+        story: `Arriving at the London temple in winter, Prabhupāda inspected the Rādhā-Kṛṣṇa altar, praised the shining brass ārati paraphernalia, and taught that polishing the Deities' utensils purifies the devotee's own heart.`,
+        quote: `If you clean the Deities' utensils, your heart will become cleansed.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30: "London: A Dream Fulfilled"`,
+        q: [`Do I resent mundane cleaning duties as "unspiritual"?`, `How does outer cleanliness affect my focus during prayer?`],
+        challenge: `Clean one neglected corner of your home or temple kitchen thoroughly as direct service to Kṛṣṇa.`
+      },
+      {
+        id: 32, pillar: 'p3', name: `Regular Śravaṇam-Kīrtanam Process`,
+        essence: `Establishing daily hearing, chanting, remembering, and worship without neglect.`,
+        story: `In San Francisco, Prabhupāda distilled the essence of Śrīmad-Bhāgavatam into four steady daily habits—śrotavyaḥ kīrtitavyaś ca dhyeyaḥ pūjyaś ca nityadā—stressing that "regularly" is the secret of spiritual realisation.`,
+        quote: `We have to think of, we have to speak, we have to hear, we have to worship. And should we do this occasionally? No. Nityadā: regularly.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 24: "New Jagannātha Purī"`,
+        q: [`Which of the four—hearing, chanting, remembering, worship—is weakest in my daily schedule?`, `How can I make it a steady daily habit rather than an occasional mood?`],
+        challenge: `Listen to or read a 15-minute Śrīmad-Bhāgavatam class at a fixed time today.`
+      },
+      {
+        id: 33, pillar: 'p3', name: `Deep Absorption in Bhägavatam & Caitanya-caritāmṛta`,
+        essence: `Drawing daily spiritual strength and narrative richness from spotless Vedic literature.`,
+        story: `Whether sitting in his room in India or enduring Atlantic storms on the Jaladuta, Prabhupāda immersed himself in Caitanya-caritāmṛta and Śrīmad-Bhāgavatam, bringing characters like Sanātana, Ajāmila, and Sāvitrī vividly to life.`,
+        quote: `Everything is there in Bhagavad-gītā. We could study one verse for three months.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 19 & Vol. 3, Ch. 24`,
+        q: [`Do I skim spiritual books quickly or pause to relish each verse and purport?`, `Which pastime from Bhāgavatam has lately stayed in my heart?`],
+        challenge: `Read just two pages of Śrīmad-Bhāgavatam slowly today and summarise its core lesson in one sentence.`
+      },
+      {
+        id: 34, pillar: 'p3', name: `Observing Regulative Principles Strictly`,
+        essence: `Maintaining four pure pillars—no meat-eating, intoxication, illicit sex, or gambling—as bedrock of spiritual clarity.`,
+        story: `Even as a toddler with typhoid, Abhay refused Dr. Bose's chicken broth; decades later in TV interviews and temple standards, he prohibited the four pillars firmly so his students could stand as gentlemen of character.`,
+        quote: `Anyone who utters the name of Kṛṣṇa is immediately freed… If you accept spiritual life and at the same time go on committing sinful activities, you will never progress.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1 & Vol. 4, Ch. 32`,
+        q: [`Where might subtle compromises or excuses be eroding my spiritual discipline?`, `How do the four regulative principles protect my peace of mind?`],
+        challenge: `Review your diet and media intake today, ensuring full purity and simplicity.`
+      },
+      {
+        id: 35, pillar: 'p3', name: `Honouring Sacred Pilgrimage Properly`,
+        essence: `Visiting holy places not as mere sightseers, but to hear from saintly persons.`,
+        story: `During the Allahabad Ardha-kumbha-melā in 1971, Prabhupāda taught his disciples sitting in their chilly tent that a tīrtha becomes potent when one associates with pure devotees and hears Kṛṣṇa-kathā.`,
+        quote: `To go to a holy place means to find a holy person and hear from him. A place is holy because of the presence of the saintly persons.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`When I visit temples or dhāmas, am I mainly taking photographs or seeking submissive hearing?`, `Whose saintly association can I seek out this week?`],
+        challenge: `Listen attentively to a senior Vaiṣṇava's lecture or reflection with a notebook in hand.`
+      },
+      {
+        id: 36, pillar: 'p3', name: `Balancing Bhāgavata & Pañcarātrikī Rails`,
+        essence: `Uniting philosophical preaching and chanting with regulated Deity worship like two parallel railway tracks.`,
+        story: `Planning grand temples in Māyāpur, Vṛndāvana, and Bombay, Prabhupāda explained that while bhāgavata-mārga (hearing and chanting) is primary, pañcarātrikī viddhi (temple worship) purifies restless minds.`,
+        quote: `The train runs on two rails. One rail was bhāgavata-mārga; the other, pañcarātrikī viddhi.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 5, Ch. 38: "No One Listens to a Poor Man"`,
+        q: [`Do I favour philosophy while neglecting worship, or ritual while neglecting study?`, `How can I balance both rails smoothly this week?`],
+        challenge: `Pair fifteen minutes of scripture reading with a respectful ārati or darśana today.`
+      },
+      {
+        id: 37, pillar: 'p3', name: `Reverent Relish of Vaiṣṇava Bhajanas`,
+        essence: `Singing prayers of Narottama dāsa Ṭhākura and Lord Caitanya with deep contemplative feeling.`,
+        story: `In London, Prabhupāda asked Yamunā and Puruṣottama to record his morning bhajanas daily, confessing his favourite was Narottama dāsa's "Hari hari viphale" on never wasting this rare human birth.`,
+        quote: `O Lord Hari, I have spent my life uselessly. Although I have taken this rare human birth, I have not worshiped Rādhā and Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30: "London: A Dream Fulfilled"`,
+        q: [`Do I rush through daily prayers without contemplating their Bengali or Sanskrit meaning?`, `Which line of a Vaiṣṇava song moves my heart most deeply?`],
+        challenge: `Read the word-for-word translation of one Vaiṣṇava bhajana before singing it today.`
+      },
+      {
+        id: 38, pillar: 'p3', name: `Organising Joyful Festivals & Sunday Feasts`,
+        essence: `Inviting the public to experience Kṛṣṇa consciousness through beauty, music, philosophy, and prasādam.`,
+        story: `From childhood eight-day Ratha-yātrā processions down Harrison Road to San Francisco Golden Gate Park and Los Angeles Sunday Love Feasts, Prabhupāda made festivals magnetic portals to bhakti.`,
+        quote: `He, more than any of his disciples, wanted the public to come and chant and dance in the temple and see the Deity of Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1 & Vol. 4, Ch. 29`,
+        q: [`Do I treat temple festivals merely as events to attend or opportunities to host newcomers?`, `What service can I volunteer for at the next Sunday feast or festival?`],
+        challenge: `Bring a friend or family member to a Sunday feast or home saṅga programme.`
+      },
+
+      // PILLAR 4: Mastery of Mind, Senses & Speech (39-50)
+      {
+        id: 39, pillar: 'p4', name: `Dhīra — Undisturbed Self-Control`,
+        essence: `Remaining steady amidst provocation, temptation, or bodily discomfort.`,
+        story: `Admiring Kālidāsa's definition of dhīra in college, Prabhupāda embodied it throughout life—once silently pulling a dropped tack from his own foot without a cry so as not to distress Jadurāṇī.`,
+        quote: `He silently and emotionlessly reached down and pulled the tack from his foot, without so much as a cry.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 2 & Vol. 2, Ch. 20`,
+        q: [`What minor inconvenience makes me irritable or snap at others?`, `How can pausing for three deep breaths before reacting help me stay dhīra?`],
+        challenge: `When something irritates you today, absorb the moment silently without complaining.`
+      },
+      {
+        id: 40, pillar: 'p4', name: `Tolerant Endurance Like Haridāsa Ṭhākura`,
+        essence: `Bearing opposition, harsh weather, and fatigue steadily while continuing to chant.`,
+        story: `When morning meditation in San Francisco was interrupted, Prabhupāda vividly enacted Haridāsa Ṭhākura being beaten in twenty-two marketplaces yet chanting Hare Kṛṣṇa undisturbed.`,
+        quote: `A person who is spiritually advanced—for him there is no misery, even in this world, and what to speak of the other world.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 24: "New Jagannātha Purī"`,
+        q: [`How quickly do external disturbances break my devotional steadiness?`, `What can Haridāsa Ṭhākura's tolerance teach me about my current trial?`],
+        challenge: `Endure one uncomfortable circumstance today—heat, delay, or criticism—with inner chanting.`
+      },
+      {
+        id: 41, pillar: 'p4', name: `Razor-Sharp Philosophical Logic`,
+        essence: `Dismantling atheism, impersonalism, and vague speculation with clear Vedic reasoning.`,
+        story: `When young New York intellectuals dropped names like Camus, Nietzsche, or Vedānta without understanding them, Prabhupāda pierced vague talk about "something" and anchored every discussion in clear śāstra.`,
+        quote: `If you have no worship, no thought, no hearing, no speaking, and are simply thinking of "something," that something is not God.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 19 & Vol. 3, Ch. 24`,
+        q: [`Is my understanding of Kṛṣṇa consciousness vague sentiment or grounded in clear philosophy?`, `Which common misconception about God can I learn to answer clearly?`],
+        challenge: `Study one philosophical argument from Prabhupāda's purports until you can explain it simply.`
+      },
+      {
+        id: 42, pillar: 'p4', name: `Vivid Storytelling Artistry`,
+        essence: `Bringing ancient scriptures alive through dramatic dialogue, humour, and everyday analogies.`,
+        story: `In San Francisco lectures, Prabhupāda slipped effortlessly into the voices of Yamarāja, Sāvitrī, and a Calcutta stockbroker crying "Kamarhati!" at death, holding listeners spellbound.`,
+        quote: `Prabhupāda didn't change the pitch or accent of his voice… But with a subtle storyteller's art, each voice became a distinct person.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 24 & Vol. 4, Ch. 32`,
+        q: [`How can I make spiritual truths relatable rather than dry when speaking with others?`, `Which Prabhupāda analogy helped an abstract idea click for me?`],
+        challenge: `Retell one illustrative story or analogy from Prabhupāda's lectures to a family member or child.`
+      },
+      {
+        id: 43, pillar: 'p4', name: `Transcending Bodily Pangs`,
+        essence: `Continuing to teach and serve even under physical pain, exhaustion, and old age.`,
+        story: `Under scorching TV studio lights that triggered blinding headaches, or with trembling hands after his 1967 stroke, Prabhupāda kept lecturing on self-realisation without self-pity.`,
+        quote: `If I ever get badly sick, don't call a doctor. Don't take me to a hospital. Just give me my beads and chant Hare Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 3, Ch. 25: "Our Master Has Not Finished His Work"`,
+        q: [`How easily do mild aches excuse me from chanting or service?`, `How can I separate temporary bodily feelings from my eternal duty as a soul?`],
+        challenge: `Complete your scheduled reading or chanting even if you feel slightly tired today.`
+      },
+      {
+        id: 44, pillar: 'p4', name: `Zero Compromise with Māyāvāda & Sham`,
+        essence: `Refusing to flatter pseudo-gurus or impersonalists who obscure Kṛṣṇa's personal form.`,
+        story: `Like his spiritual master Bhaktisiddhānta, Prabhupāda firmly refuted popular impersonalist commentaries on Bhagavad-gītā and exposed "cheat and be cheated" cheap meditation schemes.`,
+        quote: `How can you explain the Bhagavad-gītā as it is when you do not understand it? Such an attempt is nonsense.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 6 & Vol. 4, Ch. 32`,
+        q: [`Do I uncritically accept watered-down "everyone is God" ideas just to seem agreeable?`, `Why is Kṛṣṇa's personal form essential to real love of God?`],
+        challenge: `Read Bhagavad-gītā 9.34 and Prabhupāda's purport carefully to appreciate Kṛṣṇa's supreme personality.`
+      },
+      {
+        id: 45, pillar: 'p4', name: `Discernment in Speech & Association`,
+        essence: `Withholding time from insincere show while pouring hours into genuine inquirers.`,
+        story: `When a student visited Bowery only to impress a girl, Prabhupāda perceived the motive instantly and closed the door; yet whenever anyone arrived with sincere questions, he spoke for hours.`,
+        quote: `He saw through it right away, and he rejected that type of association. But every time I came in trouble, he always helped me.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 18: "Breaking Ground"`,
+        q: [`Am I wasting energy in superficial conversations while neglecting sincere seekers?`, `Do I approach senior devotees to learn humbly or to show off?`],
+        challenge: `Notice your motive before speaking in a devotional gathering—aim for humility and service.`
+      },
+      {
+        id: 46, pillar: 'p4', name: `Precise Mastery of Practical Craft`,
+        essence: `Demonstrating attentive skill even in cooking, business, and temple details.`,
+        story: `When Australian disciples claimed capātīs couldn't puff on an electric stove, Prabhupāda stepped into the kitchen and made every capātī puff perfectly, proving Kṛṣṇa consciousness sharpens practical competence.`,
+        quote: `Prabhupāda showed exactly how to make capātīs that puffed up every time—even on an electric burner.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`Do I hide sloppiness behind excuses like "my equipment isn't right"?`, `What practical skill can I refine to offer better quality to Kṛṣṇa?`],
+        challenge: `Perform one everyday task—cooking, writing an email, or cleaning—with craftsman-like care.`
+      },
+      {
+        id: 47, pillar: 'p4', name: `Balanced Diplomacy & Legal Acumen`,
+        essence: `Engaging world leaders, ambassadors, and legal systems shrewdly for Kṛṣṇa's service.`,
+        story: `Conversing with U.S. Ambassador Kenneth Keating in India, Prabhupāda turned philosophical dialogue about God as the "thread of pearls" seamlessly toward arranging outreach in America.`,
+        quote: `For Prabhupāda, such diplomatic and legal strategy was as spiritual as translating Kṛṣṇa or singing before his Deities.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30 & Vol. 5, Ch. 38`,
+        q: [`Do I neglect wise planning and clarity in worldly dealings?`, `How can I represent Kṛṣṇa consciousness with poise before leaders or colleagues?`],
+        challenge: `Handle one administrative or financial obligation promptly and transparently today.`
+      },
+      {
+        id: 48, pillar: 'p4', name: `Freedom from Sex Desire & Material Craving`,
+        essence: `Conquering sensory agitation completely through higher taste in Kṛṣṇa consciousness.`,
+        story: `As crowds in India surged to touch his feet after powerful paṇḍāl lectures, Prabhupāda turned calmly to nearby disciples and revealed the simple secret behind his spiritual potency.`,
+        quote: `Do you know why they are worshiping me? It is because I am free from sex desire.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 36: "In Every Town and Village"`,
+        q: [`What sensory distractions pull my mind away from peace and focus?`, `How does deeper taste in chanting and reading weaken lower cravings?`],
+        challenge: `Practise strict sense restraint today—skip unnecessary snacking, gossip, or screen entertainment.`
+      },
+      {
+        id: 49, pillar: 'p4', name: `Penetrating Gravity of Leadership`,
+        essence: `Combining fatherly humour with serious spiritual gravity that matures careless minds.`,
+        story: `Sending young, inexperienced disciples to establish missions or manage funds, Prabhupāda looked at them with focused intensity, imparting the gravity of Arjuna and Hanumān serving Kṛṣṇa.`,
+        quote: `A Vaiṣṇava is not a retired person who only sleeps and eats and chants Hare Kṛṣṇa. Rather, a Vaiṣṇava fights for Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30: "London: A Dream Fulfilled"`,
+        q: [`Do I treat my spiritual commitments casually or with thoughtful gravity?`, `Where am I being called to step up with greater maturity?`],
+        challenge: `Take full ownership of one pending responsibility without waiting to be reminded.`
+      },
+      {
+        id: 50, pillar: 'p4', name: `Consistent Example of Active Samādhi`,
+        essence: `Demonstrating unbroken remembrance of Kṛṣṇa right in the midst of intense public activity.`,
+        story: `Whether lecturing in 100-degree Calcutta heat, dictating at 2 a.m., or challenging intellectuals at M.I.T. on the science of the soul, Prabhupāda never stepped out of active samādhi.`,
+        quote: `Śrīla Prabhupāda was the emblem of active samādhi—always hearing about, glorifying, and remembering Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 35: "This Remote Corner Of the World"`,
+        q: [`Does busyness make me forget Kṛṣṇa, or do I weave remembrance into busyness?`, `What simple cue can remind me of Kṛṣṇa every hour?`],
+        challenge: `Pause for ten seconds before each major task today to remember Kṛṣṇa.`
+      },
+
+      // PILLAR 5: Inner Character, Humility & Purity (51-62)
+      {
+        id: 51, pillar: 'p5', name: `Selfless Humility ("Dāso 'smi")`,
+        essence: `Viewing oneself as a fallen servant of one's guru and Kṛṣṇa, even amidst global acclaim.`,
+        story: `Never claiming to be a pure devotee himself, Prabhupāda insisted he was merely the servant of his Guru Mahārāja; installing Deities in Los Angeles, he wept humbly asking Kṛṣṇa to accept his offering.`,
+        quote: `Kṛṣṇa, I am most rotten and fallen, but I have brought this thing for You. Please take it.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 29 & Ch. 36`,
+        q: [`When praised for a service, do I take quiet pride or mentally pass the credit to guru and Kṛṣṇa?`, `How does remembering our smallness free us from anxiety?`],
+        challenge: `When thanked today, sincerely reply inside your heart and out loud that all credit belongs to Śrīla Prabhupāda and Kṛṣṇa.`
+      },
+      {
+        id: 52, pillar: 'p5', name: `Simplicity Without Snobbery`,
+        essence: `Remaining warm, approachable, and unpretentious with every guest regardless of status.`,
+        story: `Meeting B. L. Jaju in India after conquering the West, Prabhupāda spoke like an affectionate elder brother, completely free of airs, recounting his Bowery beginnings with natural simplicity.`,
+        quote: `I found no snobbery in him. He was very simple. And he was telling, as if my brother was telling to me.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`Do spiritual titles or knowledge ever make me aloof toward ordinary people?`, `How can I keep my manner simple, warm, and unguarded?`],
+        challenge: `Have an unhurried, down-to-earth conversation with someone younger or newer than you.`
+      },
+      {
+        id: 53, pillar: 'p5', name: `Absolute Purity of Motive`,
+        essence: `Acting solely for Kṛṣṇa's pleasure with no ulterior desire for wealth, fame, or followers.`,
+        story: `Writing to Sumati Morarji from New York's winter struggle, Prabhupāda assured her he had no ambition to own property—he sought a building solely so seekers could chant, hear Bhāgavatam, and worship.`,
+        quote: `I have come here in this old age neither for sightseeing nor for any personal interest. It is for the interest of the entire humanity.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 14–15`,
+        q: [`What hidden personal wish sometimes mixes into my devotional service?`, `Would I continue this service happily if nobody ever knew I did it?`],
+        challenge: `Perform an anonymous act of service today where no one knows you contributed.`
+      },
+      {
+        id: 54, pillar: 'p5', name: `Indifference to Worldly Criticism`,
+        essence: `Refusing to budge an inch from Govinda's lotus feet when relatives or critics mock the path.`,
+        story: `As family and peers questioned his dedication to Back to Godhead over private gain, Abhay meditated on Mādhavendra Purī's fearless verse, holding fast to serving Govinda regardless of slander.`,
+        quote: `Let the sharp moralists accuse me… Still, my mind does not budge an inch from the determination to serve the lotus feet of Govinda.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 6: "An Unknown Friend"`,
+        q: [`Whose disapproval makes me shrink from practising bhakti openly?`, `Do I seek approval from worldly critics or from guru and śāstra?`],
+        challenge: `Wear your tilaka, neck beads, or spiritual identity with quiet dignity today without hiding.`
+      },
+      {
+        id: 55, pillar: 'p5', name: `Honouring Family Love in Kṛṣṇa's Service`,
+        essence: `Reciprocating affectionate family bonds gracefully without compromising spiritual renunciation.`,
+        story: `Returning to Calcutta as a world-renowned sannyāsī late at night, Prabhupāda insisted everyone honour the dishes his sister Bhavatarini had lovingly cooked, cherishing her lifelong devotion to feeding him.`,
+        quote: `Whatever my sister cooks, we have to eat. This is her favorite activity. She likes to cook for me and feed me.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 31: "A Threat Against ISKCON"`,
+        q: [`Do I dismiss family members' simple gestures of care because they aren't formal devotees?`, `How can I gently engage family affection in offering food to Kṛṣṇa?`],
+        challenge: `Express warm appreciation to a parent, sibling, or relative today and offer them something spiritual.`
+      },
+      {
+        id: 56, pillar: 'p5', name: `Gratitude & Lifelong Reverence for Father`,
+        essence: `Cherishing and passing on the pure Vaiṣṇava values planted in childhood.`,
+        story: `In New York and Indore alike, Prabhupāda spoke fondly of Gour Mohan De—who prayed his son would serve Rādhārāṇī, arranged mṛdaṅga lessons, fed guests daily, and waited for Abhay even on his deathbed.`,
+        quote: `Actually, his real business was pūjā. Ding ding ding—we would hear the bell and wake up and see him bowing down before Kṛṣṇa.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 1 & Vol. 4, Ch. 32`,
+        q: [`Have I acknowledged the good values and sacrifices my parents or mentors gave me?`, `What spiritual seed am I planting for children around me?`],
+        challenge: `Reflect with gratitude on three mentors who shaped your faith, and pray for their blessings.`
+      },
+      {
+        id: 57, pillar: 'p5', name: `Childlike Simplicity & Playful Humour`,
+        essence: `Combining scholarly depth with disarming warmth and laughter.`,
+        story: `At the London temple opening, noticing Śāradīyā had sewn the Deities' flounced dresses, Prabhupāda thanked her warmly and teased her smilingly about not fighting with her husband, filling the room with laughter.`,
+        quote: `Don't fight with your husband. He is a good boy. Anybody that comes to Kṛṣṇa consciousness is good.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30: "London: A Dream Fulfilled"`,
+        q: [`Do I take myself too seriously in devotional life?`, `How does gentle, affectionate humour ease tension in a family or temple?`],
+        challenge: `Diffuse one tense moment today with warmth, good humour, and appreciation.`
+      },
+      {
+        id: 58, pillar: 'p5', name: `Unshakeable Integrity & Trustworthiness`,
+        essence: `Earning total confidence in financial and moral responsibilities from youth onward.`,
+        story: `When senior staff questioned why young Abhay was appointed department manager at Bose's Laboratory, Dr. Kartick Bose replied he needed someone trustworthy enough to sign checks for forty thousand rupees.`,
+        quote: `For that position I needed someone I could trust like my own son. He is signing checks for forty thousand rupees.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 2: "College, Marriage, and Gandhi's Movement"`,
+        q: [`Would people in my workplace or temple trust me unconditionally with sensitive resources?`, `Where can I strengthen punctuality and honesty in my dealings?`],
+        challenge: `Audit your commitments today and fulfil every promise—especially small financial or time ones.`
+      },
+      {
+        id: 59, pillar: 'p5', name: `Rejection of Superficial Hypocrisy`,
+        essence: `Distinguishing genuine Vaiṣṇava character from outward religious costume.`,
+        story: `Visiting Jagannātha Purī as a young pilgrim and seeing temple priests smoking or hosts cooking meat, Abhay put his plate aside and ate only temple prasādam, valuing authentic purity over external titles.`,
+        quote: `I have never taken meat… I never expected this at Jagannātha Purī.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 2 & Vol. 3, Ch. 27`,
+        q: [`Am I careful that my inward habits match my outward devotional appearance?`, `Do I evaluate spiritual teachers by pure character or external show?`],
+        challenge: `Correct one private habit today that does not align with your public devotional standard.`
+      },
+      {
+        id: 60, pillar: 'p5', name: `Equipoise in Opulence or Poverty`,
+        essence: `Remaining untouched inside whether staying in a Bowery loft or a luxurious Los Angeles residence.`,
+        story: `Disciples in Calcutta marvelled that Prabhupāda was equally regal, calm, and absorbed whether sitting on a bare cushion in India or in an opulent Western apartment—completely unaffected by surroundings.`,
+        quote: `He was unaffected by his surroundings, whether in Los Angeles, where he had lived comfortably amid opulence, or in Calcutta.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 31: "A Threat Against ISKCON"`,
+        q: [`Does comfort make me lazy, or does scarcity make me anxious?`, `How can I practise inner contentment regardless of today's facilities?`],
+        challenge: `Accept whatever accommodation, food, or weather comes today with genuine gratitude.`
+      },
+      {
+        id: 61, pillar: 'p5', name: `Correcting Disciples Out of Protective Love`,
+        essence: `Addressing spiritual carelessness immediately—even over a tilted photo—to safeguard the disciple's heart.`,
+        story: `Finding his photograph placed upside down in his Los Angeles room, Prabhupāda pointed out the carelessness sternly—not for personal ego, but because disrespect toward the guru undermines the disciple's devotion.`,
+        quote: `Every morning the devotees sing prayers to the spiritual master… How could any sincere disciple not notice?`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 31: "A Threat Against ISKCON"`,
+        q: [`How do I receive correction from mentors—defensively or gratefully?`, `Do I notice small signs of carelessness in my worship space?`],
+        challenge: `Welcome one piece of constructive feedback today without making excuses.`
+      },
+      {
+        id: 62, pillar: 'p5', name: `Deep, Confidential Love for Kṛṣṇa & Caitanya`,
+        essence: `Carrying an intimate personal longing for Vraja and Lord Caitanya beneath outward management.`,
+        story: `In 26 Second Avenue, a visitor noticed Prabhupāda gazing up at a framed painting of Lord Caitanya dancing with an expression of deep love in his eyes—a quiet glimpse into his eternal relationship with the Lord.`,
+        quote: `Because I have a great longing I called to You. I am Your eternal servant, and therefore I desire Your association so much.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 12 & Ch. 19`,
+        q: [`Amidst schedules and projects, do I cultivate personal affection for Kṛṣṇa and Lord Caitanya?`, `When did I last look at the Deities slowly with heartfelt prayer?`],
+        challenge: `Spend three quiet minutes simply gazing at Rādhā-Kṛṣṇa or Pañca-tattva in silent heartfelt prayer.`
+      },
+
+      // PILLAR 6: Dynamic Action, Renunciation & Time Utilisation (63-74)
+      {
+        id: 63, pillar: 'p6', name: `Yukta-Vairāgya (True Renunciation in Action)`,
+        essence: `Engaging modern technology, wealth, and buildings in Kṛṣṇa's service without personal attachment.`,
+        story: `Explaining why ISKCON used airplanes, dictaphones, teletype machines, and cars, Prabhupāda cited Rūpa Gosvāmī: dry renunciation leaves tools to māyā, whereas yukta-vairāgya offers everything to Kṛṣṇa.`,
+        quote: `Our attachment should be only for Kṛṣṇa, and for Kṛṣṇa's service we can accept anything. That is the Kṛṣṇa consciousness movement.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 36: "In Every Town and Village"`,
+        q: [`Am I misusing technology for distraction when it could serve Kṛṣṇa's mission?`, `What device or talent can I dedicate consciously to service today?`],
+        challenge: `Use your phone or computer for one clear devotional output today (sharing a quote, organising a class, or serving).`
+      },
+      {
+        id: 64, pillar: 'p6', name: `Dovetailing Work with Supreme Consciousness`,
+        essence: `Teaching everyone to keep their craft or occupation while dedicating its purpose to God.`,
+        story: `Speaking in Room 307 and on the Bowery, Prabhupāda encouraged bohemian artists and musicians not to become idle, but to collaborate with the Supreme Consciousness like Arjuna—beginning by offering their food.`,
+        quote: `Dovetail your consciousness with the Supreme Consciousness… Kṛṣṇa didn't ask Arjuna to give up his work, but to do it for the Supreme.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 17: "On the Bowery"`,
+        q: [`Do I separate "spiritual life" from my job or studies?`, `How can I dovetail my natural talents into ISKCON's service?`],
+        challenge: `Before starting work or study today, verbally dedicate your effort and skill to Kṛṣṇa.`
+      },
+      {
+        id: 65, pillar: 'p6', name: `Tireless Work Without Spiritual Fatigue`,
+        essence: `Working twenty-four hours in Kṛṣṇa's service, eating and resting only to sustain the body for mission.`,
+        story: `Even at seventy-five in 100-degree Calcutta heat, Prabhupāda preached hour after hour as young disciples grew sleepy, explaining that transcendental service sustains boundless energy.`,
+        quote: `I am here always working at something, reading or writing—twenty-four hours. Simply when I feel hungry, I take some food… Otherwise, I don't feel fatigued.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 17 & Vol. 4, Ch. 31`,
+        q: [`How much of my tiredness comes from aimless mental clutter rather than real exertion?`, `Can I regulate meals and sleep better to serve with steady energy?`],
+        challenge: `Keep regular meal and rest times today so your mind stays crisp for study and chanting.`
+      },
+      {
+        id: 66, pillar: 'p6', name: `Prompt Punctuality & Swift Execution`,
+        essence: `Moving promptly from one service engagement to the next without sluggish delay.`,
+        story: `In India during 1971, whenever cars were ready, Prabhupāda stepped out immediately—disciples who lingered had to race in cycle-rickshaws only to find him already calmly mid-lecture at the next home.`,
+        quote: `Prabhupāda moved quickly. When the cars were ready, he would come out of his room and go, leaving behind anyone who wasn't ready.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`Does chronic lateness or procrastination steal my time for Kṛṣṇa?`, `How can preparing five minutes early honour other devotees' time?`],
+        challenge: `Arrive five minutes early for every appointment and devotional programme today.`
+      },
+      {
+        id: 67, pillar: 'p6', name: `Self-Sufficient Simple Living`,
+        essence: `Championing natural village economy, cow protection, and high thinking over industrial greed.`,
+        story: `Visiting New Vrindaban in West Virginia, Prabhupāda envisioned self-sufficient cottages, schools where children act out Kṛṣṇa's pastimes, and hand-churned butter—simple living and high thinking.`,
+        quote: `The city is made by man, and the country is made by God… An ideal Vedic community producing all their own food was what Prabhupāda wanted.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 29: "Unlimited Opportunity, Limited Time"`,
+        q: [`Where does artificial consumerism complicate my life unnecessarily?`, `How can I support cow protection, local produce, or simpler habits?`],
+        challenge: `Decline one unnecessary purchase today and redirect that time or money to a worthy spiritual cause.`
+      },
+      {
+        id: 68, pillar: 'p6', name: `Grand Vision for Temples & Dhāma Development`,
+        essence: `Building magnificent spiritual centres to attract distracted modern humanity back to God.`,
+        story: `Knowing people rarely heed austerity under a tree, Prabhupāda declared "No one listens to a poor man" and launched grand temples in Māyāpur, Vṛndāvana, and Bombay to establish Kṛṣṇa's palace on earth.`,
+        quote: `The Deity was the king, Prabhupāda said, and all the temple residents were His personal servants. The temple, therefore, should be like a palace.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 30 & Vol. 5, Ch. 38`,
+        q: [`Do I appreciate the spiritual purpose behind opulent temples in ISKCON?`, `How can I help build or maintain Kṛṣṇa's house in my city?`],
+        challenge: `Contribute a small offering of time, cleanliness, or lakṣmī toward your local temple project.`
+      },
+      {
+        id: 69, pillar: 'p6', name: `Conscious Preparation for Death`,
+        essence: `Training the mind throughout life to remember Kṛṣṇa at the final breath.`,
+        story: `Narrating the Bhāgavatam history of Ajāmila in Indore, Prabhupāda contrasted a merchant dying while shouting "Kamarhati!" over his shares with one who absorbs his mind in Nārāyaṇa.`,
+        quote: `One's mentality at death determines one's next birth. Because the devotee is Kṛṣṇa conscious, he enters the spiritual world at death.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`If my life ended tonight, what thought would naturally rise first in my mind?`, `How am I practising Kṛṣṇa remembrance now so it stays natural at the end?`],
+        challenge: `Before sleeping tonight, chant one quiet round or read a verse from Bhagavad-gītā Chapter 8.`
+      },
+      {
+        id: 70, pillar: 'p6', name: `Principled Renunciation of Worldly Prestige`,
+        essence: `Walking away from colonial status or material titles when conscience and higher duty call.`,
+        story: `Having passed his B.A. exams at Scottish Churches' College in 1920, Abhay declined to appear for his diploma in support of Gandhi's noncooperation call, never chasing British-tainted worldly ambition.`,
+        quote: `Although I had passed my final examination—B.A.—I gave it up and did not appear.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 2: "College, Marriage, and Gandhi's Movement"`,
+        q: [`Am I overly attached to worldly titles, degrees, or social approval?`, `What false prestige can I gently let go of for spiritual freedom?`],
+        challenge: `Serve humbly today in a way that carries no title, applause, or status.`
+      },
+      {
+        id: 71, pillar: 'p6', name: `Detachment Supporting Spiritual Focus`,
+        essence: `Accepting Kṛṣṇa's mercy even when family life lacks romantic ease, seeing it as aid for renunciation.`,
+        story: `When young Abhay disliked his arranged marriage, Gour Mohan counselled him that detachment from domestic infatuation was Kṛṣṇa's grace preparing him for future spiritual advancement—advice Abhay thoughtfully accepted.`,
+        quote: `It is Kṛṣṇa's grace that your present wife is not to your liking… If you do not become too attached to your wife and family that will help you in spiritual life.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 1, Ch. 2: "College, Marriage, and Gandhi's Movement"`,
+        q: [`Do I resent minor domestic frustrations or see how Kṛṣṇa uses them to teach detachment?`, `How can I practise responsible care without anxious attachment?`],
+        challenge: `Meet one household frustration today with patience and inner detachment.`
+      },
+      {
+        id: 72, pillar: 'p6', name: `Jet-Age Parivrājakācārya Stamina`,
+        essence: `Crossing oceans tirelessly in old age to unite East and West in one spiritual family.`,
+        story: `Braving jets, unfamiliar climates, and constant flights between continents in his seventies, Prabhupāda smiled at a reporter asking why he didn't fly by yogic carpet: "Just to be one with you."`,
+        quote: `The miracle was that he was always traveling and that wherever he went he spoke the message of Kṛṣṇa consciousness.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 34: "Jet-Age Parivrājakācārya"`,
+        q: [`Do I use age, travel, or busyness as an excuse to pause my spiritual outreach?`, `How can I carry my sādhana seamlessly while travelling?`],
+        challenge: `Pack your beads and a small Prabhupāda book in your bag whenever you leave home.`
+      },
+      {
+        id: 73, pillar: 'p6', name: `Presence in Sound and Books`,
+        essence: `Ensuring his instructions live eternally in his vani (teachings), transcending physical absence.`,
+        story: `When disciples treasured private talks, they discovered the exact truths in his three Bhāgavatam volumes; and when Mr. Agarwal feared ISKCON would collapse after Prabhupāda passed, Prabhupāda assured him the holy name and books will sustain sincere souls forever.`,
+        quote: `Prabhupāda had said that the spiritual master is present in his instructions and that he had tried to put everything into those volumes.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 2, Ch. 20 & Vol. 4, Ch. 32`,
+        q: [`Do I realise Śrīla Prabhupāda is directly present whenever I read his books attentively?`, `How can I build a lifelong daily relationship with his vani?`],
+        challenge: `Read Śrīla Prabhupāda's purport tonight as if listening directly to him speak in person.`
+      },
+      {
+        id: 74, pillar: 'p6', name: `Transforming Every Heart via Value-Priceless Books`,
+        essence: `Trusting completely in the self-evident spiritual potency of Kṛṣṇa's message.`,
+        story: `When disciples felt discouraged after the King of Indore declined life membership, Prabhupāda smiled serenely in the car and reassured them of the intrinsic, unshakeable worth of the Bhāgavatam.`,
+        quote: `My books are like gold. It doesn't matter what you say about them. One who knows the value, he will purchase.`,
+        ref: `Vedabase — Śrīla Prabhupāda-līlāmṛta, Vol. 4, Ch. 32: "India: Dancing White Elephants"`,
+        q: [`Do I feel discouraged by outcomes instead of trusting Kṛṣṇa's timing and the potency of Prabhupāda's books?`, `How deeply do I treasure the books sitting on my own shelf?`],
+        challenge: `Dust off one unread volume of Śrīla Prabhupāda's books on your shelf and begin reading Chapter 1.`
+      }
+    ];
+
+    // App State
+    let appState = {
+      activePillar: 'all',
+      activeTrack: null,
+      activeLetter: 'ALL',
+      searchQuery: '',
+      sortBy: 'number',
+      studiedIds: [],
+      sankalpaIntention: `Deepening morning japa, scripture study, and Vaiṣṇava warmth`,
+      sankalpaDays: [
+        { day: 1, qualityId: 27, note: `Chant attentive japa before checking my phone`, done: false },
+        { day: 2, qualityId: 18, note: `Practise honeybee vision—appreciate one devotee sincerely`, done: false },
+        { day: 3, qualityId: 33, note: `Read 2 pages of Śrīmad-Bhāgavatam slowly with notes`, done: false },
+        { day: 4, qualityId: 39, note: `Pause silently before reacting to any irritation`, done: false },
+        { day: 5, qualityId: 16, note: `Offer a meal with love and share prasādam`, done: false },
+        { day: 6, qualityId: 63, note: `Dovetail one digital skill purely in Kṛṣṇa's service`, done: false },
+        { day: 7, qualityId: 73, note: `Attend Sunday feast / saṅga and share a Gītā book`, done: false }
+      ]
+    };
+
+    let currentFilteredList = [];
+    let currentModalQualityId = null;
+
+    function getPillarShort(pillarId) {
+      const found = PILLARS.find(function (p) { return p.id === pillarId; });
+      return found ? found.short : '';
+    }
+
+    function getPillarFull(pillarId) {
+      const found = PILLARS.find(function (p) { return p.id === pillarId; });
+      return found ? found.name : '';
+    }
+
+    function getQualityById(id) {
+      return QUALITIES.find(function (q) { return q.id === Number(id); }) || null;
+    }
+
+    async function persistState() {
+      if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === 'function') {
+        try {
+          await window.notebookAppApi.setAppState({
+            studiedIds: appState.studiedIds,
+            sankalpaIntention: appState.sankalpaIntention,
+            sankalpaDays: appState.sankalpaDays
+          });
+        } catch (err) {
+          // Non-fatal in preview environments
+        }
+      }
+    }
+
+    function computeFilteredQualities() {
+      let list = QUALITIES.slice();
+
+      if (appState.activeTrack) {
+        const track = TRACKS.find(function (t) { return t.id === appState.activeTrack; });
+        if (track) {
+          list = list.filter(function (q) { return track.ids.indexOf(q.id) !== -1; });
+        }
+      }
+
+      if (appState.activePillar !== 'all') {
+        list = list.filter(function (q) { return q.pillar === appState.activePillar; });
+      }
+
+      if (appState.activeLetter !== 'ALL') {
+        list = list.filter(function (q) {
+          return q.name.charAt(0).toUpperCase() === appState.activeLetter;
+        });
+      }
+
+      if (appState.searchQuery.trim() !== '') {
+        const term = appState.searchQuery.trim().toLowerCase();
+        list = list.filter(function (q) {
+          const hay = (q.name + ' ' + q.essence + ' ' + q.story + ' ' + q.quote + ' ' + q.ref).toLowerCase();
+          return hay.indexOf(term) !== -1;
+        });
+      }
+
+      if (appState.sortBy === 'alpha') {
+        list.sort(function (a, b) { return a.name.localeCompare(b.name); });
+      } else if (appState.sortBy === 'studied') {
+        list.sort(function (a, b) {
+          const aDone = appState.studiedIds.indexOf(a.id) !== -1 ? 1 : 0;
+          const bDone = appState.studiedIds.indexOf(b.id) !== -1 ? 1 : 0;
+          if (aDone !== bDone) return aDone - bDone;
+          return a.id - b.id;
+        });
+      } else {
+        list.sort(function (a, b) { return a.id - b.id; });
+      }
+
+      currentFilteredList = list;
+      return list;
+    }
+
+    function renderTracks() {
+      const container = document.getElementById('tracks-grid');
+      if (!container) return;
+      container.innerHTML = TRACKS.map(function (t) {
+        const isSelected = appState.activeTrack === t.id;
+        return `
+          <button type="button" class="track-card ${isSelected ? 'is-selected' : ''}" onclick="toggleTrack('${t.id}')">
+            <span class="mono-label" style="color: var(--tertiary);">${t.ids.length} Qualities • ${isSelected ? 'Active Track' : 'Click to Focus'}</span>
+            <h3 class="track-title">${t.name}</h3>
+            <p class="track-desc">${t.desc}</p>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderPillarPills() {
+      const container = document.getElementById('pillar-pills');
+      if (!container) return;
+      container.innerHTML = PILLARS.map(function (p) {
+        const active = appState.activePillar === p.id;
+        return `<button type="button" class="pillar-btn ${active ? 'is-active' : ''}" onclick="setPillar('${p.id}')">${p.name}</button>`;
+      }).join('');
+    }
+
+    function renderAZBar() {
+      const container = document.getElementById('az-bar');
+      if (!container) return;
+      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+      const available = {};
+      QUALITIES.forEach(function (q) {
+        available[q.name.charAt(0).toUpperCase()] = true;
+      });
+
+      let html = `<button type="button" class="az-btn ${appState.activeLetter === 'ALL' ? 'is-active' : ''}" onclick="setLetter('ALL')">All</button>`;
+      letters.forEach(function (ltr) {
+        const hasAny = !!available[ltr];
+        const active = appState.activeLetter === ltr;
+        html += `<button type="button" class="az-btn ${active ? 'is-active' : ''}" ${hasAny ? '' : 'disabled'} onclick="setLetter('${ltr}')">${ltr}</button>`;
+      });
+      container.innerHTML = html;
+    }
+
+    function renderQualities() {
+      const container = document.getElementById('qualities-container');
+      if (!container) return;
+      const list = computeFilteredQualities();
+
+      const kpiVis = document.getElementById('kpi-visible');
+      if (kpiVis) kpiVis.textContent = String(list.length);
+
+      const kpiNote = document.getElementById('kpi-filter-note');
+      if (kpiNote) {
+        if (appState.activeTrack) {
+          const tr = TRACKS.find(function (t) { return t.id === appState.activeTrack; });
+          kpiNote.textContent = tr ? 'Track: ' + tr.name : 'Filtered view';
+        } else if (appState.activePillar !== 'all') {
+          kpiNote.textContent = getPillarShort(appState.activePillar);
+        } else if (appState.activeLetter !== 'ALL' || appState.searchQuery.trim() !== '') {
+          kpiNote.textContent = 'Custom search / A–Z filter';
+        } else {
+          kpiNote.textContent = 'All pillars & A–Z active';
+        }
+      }
+
+      if (list.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <p style="margin: 0; font-weight: 500;">No qualities match your current search or filter combination.</p>
+            <button type="button" class="btn btn-primary" onclick="resetAllFilters()">Show All 74 Qualities</button>
+          </div>
+        `;
+        return;
+      }
+
+      const cardsHtml = list.map(function (q) {
+        const isStudied = appState.studiedIds.indexOf(q.id) !== -1;
+        const numStr = q.id < 10 ? '0' + q.id : String(q.id);
+        return `
+          <button type="button" class="quality-card ${isStudied ? 'is-studied' : ''}" onclick="openQualityModal(${q.id})">
+            <div>
+              <div class="quality-top">
+                <span class="quality-num">NO. ${numStr}</span>
+                <span class="quality-pillar-tag">${getPillarShort(q.pillar)}</span>
+              </div>
+              <h3 class="quality-name" style="margin-top: var(--space-xs);">${q.name}</h3>
+              <p class="quality-essence">${q.essence}</p>
+            </div>
+            <div class="quality-footer">
+              <span>Read Episode &amp; Challenge</span>
+              ${isStudied ? '<span class="studied-badge">✓ Studied</span>' : '<span>Open →</span>'}
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      container.innerHTML = `<div class="qualities-grid">${cardsHtml}</div>`;
+    }
+
+    function updateKPIs() {
+      const kpiStudied = document.getElementById('kpi-studied');
+      if (kpiStudied) kpiStudied.textContent = appState.studiedIds.length + ' / 74';
+
+      const doneDays = appState.sankalpaDays.filter(function (d) { return !!d.done; }).length;
+      const kpiSankalpa = document.getElementById('kpi-sankalpa');
+      if (kpiSankalpa) kpiSankalpa.textContent = doneDays + ' / 7';
+    }
+
+    // Filter Handlers
+    function toggleTrack(trackId) {
+      appState.activeTrack = appState.activeTrack === trackId ? null : trackId;
+      renderTracks();
+      renderQualities();
+    }
+
+    function setPillar(pillarId) {
+      appState.activePillar = pillarId;
+      renderPillarPills();
+      renderQualities();
+    }
+
+    function setLetter(ltr) {
+      appState.activeLetter = ltr;
+      renderAZBar();
+      renderQualities();
+    }
+
+    function handleSearchInput(val) {
+      appState.searchQuery = val || '';
+      renderQualities();
+    }
+
+    function handleSortChange(val) {
+      appState.sortBy = val || 'number';
+      renderQualities();
+    }
+
+    function resetAllFilters() {
+      appState.activePillar = 'all';
+      appState.activeTrack = null;
+      appState.activeLetter = 'ALL';
+      appState.searchQuery = '';
+      appState.sortBy = 'number';
+      const searchEl = document.getElementById('search-input');
+      if (searchEl) searchEl.value = '';
+      const sortEl = document.getElementById('sort-select');
+      if (sortEl) sortEl.value = 'number';
+      renderTracks();
+      renderPillarPills();
+      renderAZBar();
+      renderQualities();
+    }
+
+    // Modal Functions
+    function openQualityModal(id) {
+      const q = getQualityById(id);
+      if (!q) return;
+      currentModalQualityId = q.id;
+
+      const numStr = q.id < 10 ? '0' + q.id : String(q.id);
+      const kickerEl = document.getElementById('modal-kicker');
+      if (kickerEl) kickerEl.textContent = `Quality ${numStr} • ${getPillarFull(q.pillar)}`;
+
+      const titleEl = document.getElementById('modal-title');
+      if (titleEl) titleEl.textContent = q.name;
+
+      const essEl = document.getElementById('modal-essence');
+      if (essEl) essEl.textContent = q.essence;
+
+      const storyEl = document.getElementById('modal-story');
+      if (storyEl) storyEl.textContent = q.story;
+
+      const quoteEl = document.getElementById('modal-quote');
+      if (quoteEl) quoteEl.textContent = `“${q.quote}”`;
+
+      const refEl = document.getElementById('modal-ref');
+      if (refEl) refEl.textContent = q.ref;
+
+      const qList = document.getElementById('modal-questions');
+      if (qList) {
+        qList.innerHTML = q.q.map(function (item) {
+          return `<li>${item}</li>`;
+        }).join('');
+      }
+
+      const chEl = document.getElementById('modal-challenge');
+      if (chEl) chEl.textContent = q.challenge;
+
+      const copyStatus = document.getElementById('quote-copy-status');
+      if (copyStatus) copyStatus.textContent = '';
+
+      const copyBtn = document.getElementById('copy-quote-btn');
+      if (copyBtn) copyBtn.textContent = 'Copy Quote';
+
+      updateModalNavAndStudiedState();
+
+      const modal = document.getElementById('quality-modal');
+      if (modal) {
+        modal.classList.add('is-open');
+      }
+      const bodyEl = document.getElementById('modal-body');
+      if (bodyEl) bodyEl.scrollTop = 0;
+    }
+
+    function updateModalNavAndStudiedState() {
+      const list = currentFilteredList.length > 0 ? currentFilteredList : QUALITIES;
+      let idx = list.findIndex(function (item) { return item.id === currentModalQualityId; });
+      if (idx === -1) idx = 0;
+
+      const posLabel = document.getElementById('modal-pos-label');
+      if (posLabel) posLabel.textContent = `${idx + 1} of ${list.length}`;
+
+      const prevBtn = document.getElementById('modal-prev-btn');
+      if (prevBtn) prevBtn.disabled = list.length <= 1;
+
+      const nextBtn = document.getElementById('modal-next-btn');
+      if (nextBtn) nextBtn.disabled = list.length <= 1;
+
+      const studiedBtn = document.getElementById('modal-studied-btn');
+      if (studiedBtn) {
+        const isStudied = appState.studiedIds.indexOf(currentModalQualityId) !== -1;
+        studiedBtn.textContent = isStudied ? '✓ Studied (Undo)' : 'Mark as Studied';
+        studiedBtn.className = isStudied ? 'btn btn-secondary' : 'btn btn-accent';
+      }
+    }
+
+    function navigateModal(delta) {
+      const list = currentFilteredList.length > 0 ? currentFilteredList : QUALITIES;
+      if (list.length === 0) return;
+      let idx = list.findIndex(function (item) { return item.id === currentModalQualityId; });
+      if (idx === -1) idx = 0;
+      const nextIdx = (idx + delta + list.length) % list.length;
+      openQualityModal(list[nextIdx].id);
+    }
+
+    function closeQualityModal() {
+      const modal = document.getElementById('quality-modal');
+      if (modal) modal.classList.remove('is-open');
+    }
+
+    function handleBackdropClick(evt) {
+      if (evt.target && evt.target.id === 'quality-modal') {
+        closeQualityModal();
+      }
+    }
+
+    function toggleCurrentStudied() {
+      if (!currentModalQualityId) return;
+      const idx = appState.studiedIds.indexOf(currentModalQualityId);
+      if (idx === -1) {
+        appState.studiedIds.push(currentModalQualityId);
+      } else {
+        appState.studiedIds.splice(idx, 1);
+      }
+      updateModalNavAndStudiedState();
+      updateKPIs();
+      renderQualities();
+      persistState();
+    }
+
+    // Robust mobile-compatible clipboard helper
+    async function copyTextRobust(text) {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        try {
+          await navigator.clipboard.writeText(text);
+          return true;
+        } catch (e) {
+          // Fall through to execCommand fallback
+        }
+      }
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.top = '-9999px';
+        ta.style.left = '-9999px';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        ta.setSelectionRange(0, text.length);
+        const ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        return ok;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    async function copyCurrentQuote() {
+      const q = getQualityById(currentModalQualityId);
+      if (!q) return;
+      const payload = `“${q.quote}”\n— ${q.name} (${q.ref})`;
+      const ok = await copyTextRobust(payload);
+      const btn = document.getElementById('copy-quote-btn');
+      const status = document.getElementById('quote-copy-status');
+      if (ok) {
+        if (btn) btn.textContent = '✓ Copied!';
+        if (status) status.textContent = 'Quote and Vedabase reference copied to clipboard.';
+      } else {
+        if (status) status.textContent = 'Select and copy the quote text above manually.';
+      }
+    }
+
+    // 7-Day Saṅkalpa Planner
+    function renderSankalpa() {
+      const intentionEl = document.getElementById('sankalpa-intention');
+      if (intentionEl) intentionEl.value = appState.sankalpaIntention || '';
+
+      const container = document.getElementById('sankalpa-days');
+      if (!container) return;
+
+      const optionsHtml = QUALITIES.map(function (q) {
+        return `<option value="${q.id}">${q.id}. ${q.name}</option>`;
+      }).join('');
+
+      container.innerHTML = appState.sankalpaDays.map(function (d, index) {
+        return `
+          <div class="day-row ${d.done ? 'is-done' : ''}">
+            <div class="day-row-head">
+              <span class="mono-label" style="color: var(--tertiary);">Day ${d.day}</span>
+              <label class="check-label">
+                <input type="checkbox" ${d.done ? 'checked' : ''} onchange="toggleSankalpaDone(${index}, this.checked)">
+                <span>${d.done ? 'Fulfilled' : 'Mark Fulfilled'}</span>
+              </label>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="sankalpa-q-${index}">Focus Quality</label>
+              <select id="sankalpa-q-${index}" class="select-input" onchange="changeSankalpaQuality(${index}, this.value)">
+                ${optionsHtml}
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="sankalpa-note-${index}">Concrete Daily Action</label>
+              <input type="text" id="sankalpa-note-${index}" class="text-input" value="${d.note.replace(/"/g, '&quot;')}" placeholder="Write one practical commitment for Day ${d.day}…" oninput="changeSankalpaNote(${index}, this.value)">
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Set select values cleanly
+      appState.sankalpaDays.forEach(function (d, index) {
+        const sel = document.getElementById('sankalpa-q-' + index);
+        if (sel) sel.value = String(d.qualityId);
+      });
+
+      renderSankalpaPreview();
+      updateKPIs();
+    }
+
+    function buildSankalpaCardText() {
+      const doneCount = appState.sankalpaDays.filter(function (d) { return !!d.done; }).length;
+      const lines = [
+        `7-DAY SAṄKALPA — ŚRĪLA PRABHUPĀDA'S DEVOTIONAL QUALITIES`,
+        `Theme: ${appState.sankalpaIntention || 'Steady Bhakti & Character'}`,
+        `Progress: ${doneCount} / 7 Days Fulfilled`,
+        `----------------------------------------`
+      ];
+      appState.sankalpaDays.forEach(function (d) {
+        const q = getQualityById(d.qualityId);
+        const mark = d.done ? '[✓]' : '[ ]';
+        const qName = q ? `${q.id}. ${q.name}` : 'Selected Quality';
+        lines.push(`${mark} Day ${d.day}: ${qName}`);
+        if (d.note && d.note.trim() !== '') {
+          lines.push(`    Action: ${d.note.trim()}`);
+        }
+      });
+      lines.push(`----------------------------------------`);
+      lines.push(`Source: Śrīla Prabhupāda-līlāmṛta (BBT)`);
+      return lines.join('\n');
+    }
+
+    function renderSankalpaPreview() {
+      const pre = document.getElementById('sankalpa-preview');
+      if (pre) pre.textContent = buildSankalpaCardText();
+    }
+
+    function handleIntentionChange(val) {
+      appState.sankalpaIntention = val;
+      renderSankalpaPreview();
+      persistState();
+    }
+
+    function changeSankalpaQuality(index, val) {
+      if (!appState.sankalpaDays[index]) return;
+      appState.sankalpaDays[index].qualityId = Number(val);
+      renderSankalpaPreview();
+      persistState();
+    }
+
+    function changeSankalpaNote(index, val) {
+      if (!appState.sankalpaDays[index]) return;
+      appState.sankalpaDays[index].note = val;
+      renderSankalpaPreview();
+      persistState();
+    }
+
+    function toggleSankalpaDone(index, checked) {
+      if (!appState.sankalpaDays[index]) return;
+      appState.sankalpaDays[index].done = !!checked;
+      renderSankalpa();
+      persistState();
+    }
+
+    function loadRecommendedSankalpa() {
+      appState.sankalpaIntention = `Cultivating Morning Sādhana, Warmth & Book Preaching`;
+      appState.sankalpaDays = [
+        { day: 1, qualityId: 27, note: `Chant attentive japa before checking messages`, done: false },
+        { day: 2, qualityId: 18, note: `See the nectar in every devotee I meet today`, done: false },
+        { day: 3, qualityId: 33, note: `Read 2 pages of Śrīmad-Bhāgavatam thoughtfully`, done: false },
+        { day: 4, qualityId: 39, note: `Stay dhīra—pause silently during any provocation`, done: false },
+        { day: 5, qualityId: 16, note: `Offer food lovingly and share Kṛṣṇa prasādam`, done: false },
+        { day: 6, qualityId: 63, note: `Engage one modern skill purely in service`, done: false },
+        { day: 7, qualityId: 74, note: `Gift or read a Bhaktivedanta Book Trust volume`, done: false }
+      ];
+      renderSankalpa();
+      persistState();
+      const status = document.getElementById('sankalpa-status');
+      if (status) status.textContent = 'Curated 7-day preset loaded.';
+    }
+
+    function resetSankalpa(btn) {
+      if (btn.dataset.armed !== 'true') {
+        btn.dataset.armed = 'true';
+        btn.textContent = 'Click again to clear';
+        return;
+      }
+      btn.dataset.armed = 'false';
+      btn.textContent = 'Clear Saṅkalpa';
+      appState.sankalpaIntention = '';
+      appState.sankalpaDays = appState.sankalpaDays.map(function (d, i) {
+        return { day: i + 1, qualityId: i + 1, note: '', done: false };
+      });
+      renderSankalpa();
+      persistState();
+      const status = document.getElementById('sankalpa-status');
+      if (status) status.textContent = 'Saṅkalpa cleared.';
+    }
+
+    async function copySankalpaCard() {
+      const text = buildSankalpaCardText();
+      const ok = await copyTextRobust(text);
+      const btn = document.getElementById('copy-sankalpa-btn');
+      const status = document.getElementById('sankalpa-status');
+      if (ok) {
+        if (btn) btn.textContent = '✓ Card Copied!';
+        if (status) status.textContent = 'Contemplation card copied—ready to share.';
+        setTimeout(function () {
+          if (btn) btn.textContent = 'Copy Card Text';
+        }, 2200);
+      } else {
+        if (status) status.textContent = 'Copy manually from the preview box above.';
+      }
+    }
+
+    function downloadSankalpaCard() {
+      const content = buildSankalpaCardText();
+      if (window.notebookAppApi && typeof window.notebookAppApi.triggerFileDownload === 'function') {
+        window.notebookAppApi.triggerFileDownload({
+          content: content,
+          contentType: 'text/plain',
+          encoding: 'UTF-8',
+          filename: 'prabhupada-7day-sankalpa.txt'
+        });
+      } else {
+        const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'prabhupada-7day-sankalpa.txt';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+      const status = document.getElementById('sankalpa-status');
+      if (status) status.textContent = 'Contemplation card downloaded (.txt).';
+    }
+
+    // Keyboard navigation for modal
+    document.addEventListener('keydown', function (e) {
+      const modal = document.getElementById('quality-modal');
+      if (!modal || !modal.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeQualityModal();
+      if (e.key === 'ArrowLeft') navigateModal(-1);
+      if (e.key === 'ArrowRight') navigateModal(1);
+    });
+
+    async function initApp() {
+      if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === 'function') {
+        try {
+          const saved = await window.notebookAppApi.getAppState();
+          if (saved) {
+            if (Array.isArray(saved.studiedIds)) appState.studiedIds = saved.studiedIds;
+            if (typeof saved.sankalpaIntention === 'string') appState.sankalpaIntention = saved.sankalpaIntention;
+            if (Array.isArray(saved.sankalpaDays) && saved.sankalpaDays.length === 7) {
+              appState.sankalpaDays = saved.sankalpaDays;
+            }
+          }
+        } catch (err) {
+          // Proceed with defaults
+        }
+      }
+
+      renderTracks();
+      renderPillarPills();
+      renderAZBar();
+      renderQualities();
+      renderSankalpa();
+      updateKPIs();
+
+      if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === 'function') {
+        window.notebookAppApi.notifyAppReady();
+      }
+    }
+
+    initApp();
+  </script>
+</body>
+</html>
